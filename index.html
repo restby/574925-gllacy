@@ -68,14 +68,14 @@
       </ul>
       <ul class="slider__list-controls">
         <li class="slider__controls-item" aria-label="переключатель на слайд №1">
-          <i class="slider__controls-toggle slider__controls-toggle_active"></i>
-        </i>
+          <button class="slider__controls-toggle slider__controls-toggle_active" type="button"></button>
+        </li>
         <li class="slider__controls__item" aria-label="переключатель на слайд №2">
-          <i class="slider__controls-toggle"></i>
-        </i>
+          <button class="slider__controls-toggle" type="button"></button>
+        </li>
         <li class="slider__controls__item" aria-label="переключатель на слайд №3">
-          <i class="slider__controls-toggle"></i>
-        </i>
+          <button class="slider__controls-toggle" type="button"></button>
+        </li>
       </ul>
     </section>
   </header>
@@ -140,6 +140,7 @@
         </ul>
       </section>
       <section class="about">
+        <h2 class="visually-hidden">О нас</h2>
         <b class="about__title">Магазин Глэйси - это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</b>
         <ul class="about__features-list">
           <li class="about__features-item  about__features-item_1">
@@ -167,7 +168,7 @@
           <p class="news__form-desc">
             Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
           </p>
-          <form class="news__form-subscribe" action="">
+          <form class="news__form-subscribe" action="https://echo.htmlacademy.ru" method="post">
             <input class="news__field-subscribe" type="text" placeholder="Электронная почта">
             <button class="news__btn  news__btn-subscribe" type="submit">Отправить</button>
           </form>
@@ -175,6 +176,7 @@
       </section>
     </div>
     <section class="map">
+      <h2 class="visually-hidden">Адрес нашего офиса</h2>
       <div class="map__wrap">
         <img class="map__static-map" src="#" alt="">
       </div>
@@ -232,6 +234,7 @@
       </ul>
     </section>
     <section class="made-logo">
+      <h2 class="visually-hidden">Разработчик сайта</h2>
       <!-- made-logo__img -->
       <p class="made-logo__text">
         Сделано в HTML Academy &copy; 2017
@@ -256,7 +259,8 @@
     </ul>
   </section>
   <section class="modal-user">
-    <form class="modal-user__form" action="">
+    <h2 class="visually-hidden">Окно входа в личный кабинет</h2>
+    <form class="modal-user__form" action="https://echo.htmlacademy.ru" method="post">
       <input class="modal-user__input  modal-user__input_email" type="email" placeholder="Электронная почта">
       <input class="modal-user__input  modal-user__input_password" type="password" placeholder="пароль">
       <div class="modal-user__link-wrap">
@@ -271,12 +275,14 @@
     </form>
   </section>
   <section class="modal-search">
-    <form class="modal-search__form" action="">
+    <h2 class="visually-hidden">Окно с формой поиска</h2>
+    <form class="modal-search__form" action="https://echo.htmlacademy.ru" method="get">
       <input class="modal-search__input" type="text" placeholder="Что ищем?">
     </form>
   </section>
   <section class="modal-callback">
-    <form class="modal-callback__form" action="">
+    <h2 class="visually-hidden">Окно с обратной связью</h2>
+    <form class="modal-callback__form" action="https://echo.htmlacademy.ru" method="GET">
       <button class="modal-callback__btn modal-callback__close-btn" type="button">
         <span class="visually-hidden">Закрыть</span>
       </button>
