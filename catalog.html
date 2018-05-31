@@ -2,12 +2,335 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
-  <title>HTML Academy: Глейси</title>
+  <title>HTML Academy: Каталог-Глейси</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-
+  <header class="page-header">
+    <div class="page-header__logo">
+      <!-- <svg class="page-header__img"></svg>img class="page-header__img" -->
+    </div>
+    <nav class="main-nav">
+      <ul class="main-nav__info-list">
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#">Каталог</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#">Доставка и оплата</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#">О Компании</a>
+        </li>
+      </ul>
+      <ul class="main-nav__user-list">
+        <li class="main-nav__user-item">
+          <a class="main-nav__user-link" href="#"></a>
+        </li>
+        <li class="main-nav__user-item">
+          <a class="main-nav__user-link" href="#">Вход</a>
+        </li>
+        <li class="main-nav__user-item">
+          <a class="main-nav__user-link" href="#">Пусто</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="work-schedule">
+      <b class="work-schedule__time">
+        С 10 до 20, ежедневно
+      </b>
+      <b class="work-schedule__number">
+        8 812 450-25-25
+      </b>
+    </div>
+    <section class="breadcrumbs">
+          <h2 class="visually-hidden">Навигация по каталогу</h2>
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item breadcrumbs__item_1">
+              <a class="breadcrumbs__link" href="index.html" aria-label="переход на главную страницу">Главная
+              </a>
+            </li>
+            <li class="breadcrumbs__item breadcrumbs__item_2">
+              <a class="breadcrumbs__link" href="#" aria-label="переход на страницу каталога">Каталог</a>
+            </li>
+            <li class="breadcrumbs__item breadcrumbs__item_3">
+              <a class="breadcrumbs__link" href="#" aria-label="переход на страницу сливочное мароженое">Сливочное</a>
+            </li>
+          </ul>
+        </section>
+  </header>
+  <main>
+    <h1 class="">Сливочное мороженое</h1>
+    <form action="">
+      <fieldset class="sort">
+        <legend class="sort__title">Сортировка:</legend>
+        <a class="sort-option" href="#">По популярности</a>
+      </fieldset>
+      <fieldset class="price">
+        <legend class="price__title">Цена:</legend>
+        <div class="range-filter">
+          <div class="range-controls">
+            <div class="scale">
+              <div class="bar"></div>
+            </div>
+            <div class="toggle toggle-min" aria-label="индикатор минимальной цены"></div>
+            <div class="toggle toggle-max" aria-label="индикатор максимальной цены"></div>
+          </div>
+          <div class="price-controls">
+            <input name="min-price" type="text" placeholder="0" aria-label="поле для ввода минимальной цены">
+            <input name="max-price" type="text" placeholder="30000" aria-label="поле для ввода максимальной цены">
+          </div>
+        </div>
+      </fieldset>
+      <fieldset class="percent-fatness">
+        <legend class="percent-fatness__title">Жирность:</legend>
+        <ul class="percent-fatness__list">
+          <li class="percent-fatness__item  percent-fatness__item_1">
+            <input class="visually-hidden  percent-fatness__input-radio  percent-fatness__input  percent-fatness__input_1" type="radio" name="fatness" value="percent0" id="percent0" aria-label="">
+            <label class="percent__option-battery" for="percent0">0%</label>
+          </li>
+          <li class="percent-fatness__item  percent-fatness__item_2">
+            <input class="visually-hidden  percent-fatness__input-radio  percent-fatness__input  percent-fatness__input_2" type="radio" name="fatness" value="percent0" id="percent0" aria-label="" checked>
+            <label class="percent__option-battery" for="percent10">до 10%</label>
+          </li>
+          <li class="percent-fatness__item  percent-fatness__item_3">
+            <input class="visually-hidden  percent-fatness__input-radio  percent-fatness__input  percent-fatness__input_3" type="radio" name="fatness" value="percent0" id="percent0" aria-label="">
+            <label class="percent__option-battery" for="percent30">до 30%</label>
+          </li>
+          <li class="percent-fatness__item  percent-fatness__item_4">
+            <input class="visually-hidden  percent-fatness__input-radio  percent-fatness__input  percent-fatness__input_4" type="radio" name="fatness" value="percent0" id="percent0" aria-label="">
+            <label class="percent__option-battery" for="percent-over30">выше 30%</label>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset class="filler">
+        <legend class="filler__title">Наполнители:</legend>
+        <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="chocolate" aria-label="опция для выбора мороженого с шоколадными наполнителями" name="chocolate" checked>
+        <label class="filter-option-chocolate" for="chocolate">шоколадные</label>
+        <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="sugar-powder" aria-label="опция для выбора мороженого с сахарными присыпками" name="sugar-powder" checked>
+        <label class="filter-option-sugar-powder" for="sugar-powder">сахарные присыпки</label>
+        <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="fruits" aria-label="опция для выбора мороженого с фруктовыми наполнителями" name="fruits">
+        <label class="filter-option-fruits" for="fruits">фрукты</label>
+        <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="syrups" aria-label="опция для выбора мороженого с сиропами" name="syrups">
+        <label class="filter-option-syrups" for="syrups">сиропы</label>
+        <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="jams" aria-label="опция для выбора мороженого с джемами" name="jams">
+        <label class="filter-option-jams" for="jams">джемы</label>
+      </fieldset> <!-- сделать по бэм -->
+      <button type="submit">Применить</button>
+    </form>
+    <section class="result">
+      <ul class="result__list">
+        <li class="result__item  result__item_1  card__item  card__item_1">
+            <img class="card__img  card__img_1" src="#" alt="">
+            <b class="card__price  card__price_1">310 &#8381;/кг</b>
+            <p class="card__desc  card__desc_1">
+            Сливочное с апельсиновым джемом и цитрусовой стружкой
+            </p>
+            <a class="card__link  card__link_hidden" href="#">Быстрый просмотр</a>
+        </li>
+        <li class="result__item  result__item_2  card__item  card__item_2">
+            <img class="card__img  card__img_2" src="#" alt="">
+            <b class="card__price  card__price_2">380 &#8381;/кг</b>
+            <p class="card__desc  card__desc_2">
+            Сливочно-кофейнок с кусочками шоколада
+            </p>
+            <a class="card__link  card__link_hidden" href="#">Быстрый просмотр</a>
+        </li>
+        <li class="result__item  result__item_3  card__item  card__item_3">
+            <img class="card__img  card__img_3" src="#" alt="">
+            <b class="card__price  card__price_3">355 &#8381;/кг</b>
+            <p class="card__desc  card__desc_3">
+                Сливочно-клубничное с присыпкой из белого шоколада
+            </p>
+            <a class="card__link  card__link_hidden" href="#">Быстрый просмотр</a>
+        </li>
+        <li class="result__item  result__item_4  card__item  card__item_4">
+            <img class="card__img  card__img_4" src="#" alt="">
+            <b class="card__price  card__price_4">415 &#8381;/кг</b>
+            <p class="card__desc  card__desc_4">
+            Сливочное крем-брюле с карамельной подливкой
+            </p>
+            <a class="card__link  card__link_hidden" href="#">Быстрый просмотр</a>
+        </li>
+        <li class="result__item  result__item_5  card__item  card__item_5">
+            <img class="card__img  card__img_5" src="#" alt="">
+            <b class="card__price  card__price_5">310 &#8381;/кг</b>
+            <p class="card__desc  card__desc_5">
+            Сливочное с апельсиновым джемом и цитрусовой стружкой
+            </p>
+            <a class="card__link  card__link_hidden" href="#">Быстрый просмотр</a>
+        </li>
+        <li class="result__item  result__item_6  card__item  card__item_6">
+            <img class="card__img  card__img_6" src="#" alt="">
+            <b class="card__price  card__price_6">310 &#8381;/кг</b>
+            <p class="card__desc  card__desc_6">
+            Сливочное с апельсиновым джемом и цитрусовой стружкой
+            </p>
+            <a class="card__link  card__link_hidden" href="#">Быстрый просмотр</a>
+        </li>
+        <li class="result__item  result__item_7  card__item  card__item_7">
+            <img class="card__img  card__img_7" src="#" alt="">
+            <b class="card__price  card__price_7">310 &#8381;/кг</b>
+            <p class="card__desc  card__desc_7">
+            Сливочное с апельсиновым джемом и цитрусовой стружкой
+            </p>
+            <a class="card__link  card__link_hidden" href="#">Быстрый просмотр</a>
+        </li>
+        <li class="result__item  result__item_8  card__item  card__item_8">
+            <img class="card__img  card__img_8" src="#" alt="">
+            <b class="card__price  card__price_8">310 &#8381;/кг</b>
+            <p class="card__desc  card__desc_8">
+            Сливочное с апельсиновым джемом и цитрусовой стружкой
+            </p>
+            <a class="card__link  card__link_hidden" href="#">Быстрый просмотр</a>
+        </li>
+        <li class="result__item  result__item_9  card__item  card__item_9">
+            <img class="card__img  card__img_9" src="#" alt="">
+            <b class="card__price  card__price_9">310 &#8381;/кг</b>
+            <p class="card__desc  card__desc_9">
+            Сливочное с апельсиновым джемом и цитрусовой стружкой
+            </p>
+            <a class="card__link  card__link_hidden" href="#">Быстрый просмотр</a>
+        </li>
+        <li class="result__item  result__item_10  card__item  card__item_10">
+            <img class="card__img  card__img_10" src="#" alt="">
+            <b class="card__price  card__price_10">310 &#8381;/кг</b>
+            <p class="card__desc  card__desc_10">
+            Сливочное с апельсиновым джемом и цитрусовой стружкой
+            </p>
+            <a class="card__link  card__link_hidden" href="#">Быстрый просмотр</a>
+        </li>
+        <li class="result__item  result__item_11  card__item  card__item_11">
+            <img class="card__img  card__img_11" src="#" alt="">
+            <b class="card__price  card__price_11">310 &#8381;/кг</b>
+            <p class="card__desc  card__desc_11">
+            Сливочное с апельсиновым джемом и цитрусовой стружкой
+            </p>
+            <a class="card__link  card__link_hidden" href="#">Быстрый просмотр</a>
+        </li>
+        <li class="result__item  result__item_12  card__item  card__item_12">
+            <img class="card__img  card__img_12" src="#" alt="">
+            <b class="card__price  card__price_12">310 &#8381;/кг</b>
+            <p class="card__desc  card__desc_12">
+            Сливочное с апельсиновым джемом и цитрусовой стружкой
+            </p>
+            <a class="card__link  card__link_hidden" href="#">Быстрый просмотр</a>
+        </li>
+      </ul>
+    </section>
+    <section class="pagination">
+      <ul class="pagination__list">
+        <li class="pagination__item  pagination__item_1">
+          <a class="pagination__link" href="#">1</a>
+        </li>
+        <li class="pagination__item  pagination__item_2">
+          <a class="pagination__link" href="#">2</a>
+        </li>
+        <li class="pagination__item  pagination__item_3">
+          <a class="pagination__link" href="#">3</a>
+        </li>
+        <li class="pagination__item  pagination__item_4">
+          <a class="pagination__link" href="#">4</a>
+        </li>
+        <li class="pagination__item  pagination__item_5">
+          <a class="pagination__link" href="#">5</a>
+        </li>
+      </ul>
+    </section>
+  </mas="mai    </mas="mai_1n-footer">
+    <section class="social">
+      <h2 class="visually-hidden">Ссылки на социальные сети</h2>
+      <ul class="social__list">
+        <li class="social__item  social__item_1">
+          <a class="social__link  social__link_tw" href="#">
+            <span class="visually-hidden">twitter</span>
+          </a>
+        </li>
+        <li class="social__item  social__item_2">
+          <a class="social__link  social__link_inst" href="#">
+            <span class="visually-hidden">instagram</span>
+          </a>
+        </li>
+        <li class="social__item  social__item_3">
+          <a class="social__link  social__link_fb" href="#">
+            <span class="visually-hidden">facebook</span>
+          </a>
+        </li>
+        <li class="social__item  social__item_4">
+          <a class="social__link  social__link_vk" href="#">
+            <span class="visually-hidden">вконтакте</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+    <section class="footer-info">
+      <h2 class="visually-hidden">Информация о нас</h2>
+      <ul class="footer-info__list">
+        <li class="footer-info__item  footer-info__item_1">
+          <a href="#">Для поставщиков</a>
+      </li>
+        <li class="footer-info__item  footer-info__item_2">
+          <a href="#">О производстве</a>
+      </li>
+        <li class="footer-info__item  footer-info__item_3">
+          <a href="#">Наши документы</a>
+      </li>
+        <li class="footer-info__item  footer-info__item_4">
+          <a href="#">Экологические стандарты</a>
+      </li>
+      </ul>
+    </section>
+    <section class="made-logo">
+      <!-- made-logo__img -->
+      <p class="made-logo__text">
+        Сделано в HTML Academy &copy; 2017
+      </p>
+    </section>
+  </footer>
+  <div class="modal-sort">
+    <ul class="modal-sort__list">
+      <li class="modal-sort__item">
+        <a href="#">по популярности</a>
+      </li>
+      <li class="modal-sort__item">
+        <a href="#">сначала недорогие</a>
+      </li>
+      <li class="modal-sort__item">
+        <a href="#">сначала дорогие</a>
+      </li>
+      <li class="modal-sort__item">
+        <a href="#">по жирности</a>
+      </li>
+    </ul>
+  </div>
+  <div class="modal-cart">
+    <ul class="modal-cart__list">
+      <li class="modal-cart__item  modal-cart__item_1">
+        <button class="mocal-cart__del"><span class="visually-hidden">удалить</span></button>
+        <table>
+          <tr>
+            <td><img src="" alt=""></td>
+            <td>Пломбир с апельсиновым джемом</td>
+            <td> 1,5 кг х <span>200 руб.</span></td>
+            <td>300 руб.</td>
+          </tr>
+        </table>
+      </li>
+      <li class="modal-cart__item  modal-cart__item_2">
+        <button class="mocal-cart__del"><span class="visually-hidden">удалить</span></button>
+        <table>
+          <tr>
+            <td><img src="" alt=""></td>
+            <td>Клубничный пломбир с присыпкой из белого шоколада</td>
+            <td> 1,5 кг х <span>300 руб.</span></td>
+            <td>450 руб.</td>
+          </tr>
+        </table>
+      </li>
+    </ul>
+    <b>Итого: 750 руб.</b>
+    <button>Оформить заказ</button>
+  </div>
   <script src="js/script.min.js"></script>
   <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </body>

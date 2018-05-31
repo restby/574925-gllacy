@@ -9,9 +9,9 @@
 <body>
   <header class="page-header">
     <h1 class="visually-hidden">Магазин Глейси</h1>
-    <!-- div.page-header__logo
-      svg.page-header__img
-    -->
+    <div class="page-header__logo">
+      <!-- <svg class="page-header__img"></svg>img class="page-header__img" -->
+    </div>
     <nav class="main-nav">
       <ul class="main-nav__info-list">
         <li class="main-nav__item">
@@ -26,7 +26,7 @@
       </ul>
       <ul class="main-nav__user-list">
         <li class="main-nav__user-item">
-          <a class="main-nav__user-link" href="#"></a>  <!-- form -->
+          <a class="main-nav__user-link" href="#"></a>
         </li>
         <li class="main-nav__user-item">
           <a class="main-nav__user-link" href="#">Вход</a>
@@ -68,13 +68,13 @@
       </ul>
       <ul class="slider__list-controls">
         <li class="slider__controls-item" aria-label="переключатель на слайд №1">
-          <button class="slider__controls-toggle slider__controls-toggle_active"></button>
+          <i class="slider__controls-toggle slider__controls-toggle_active"></i>
         </i>
         <li class="slider__controls__item" aria-label="переключатель на слайд №2">
-          <button class="slider__controls-toggle"></button>
+          <i class="slider__controls-toggle"></i>
         </i>
         <li class="slider__controls__item" aria-label="переключатель на слайд №3">
-          <button class="slider__controls-toggle"></button>
+          <i class="slider__controls-toggle"></i>
         </i>
       </ul>
     </section>
@@ -102,36 +102,42 @@
           <a class="action__right-link" href="#">Хочу шоколадки!</a>
         </div>
       </section>
-      <section class="photo">
+      <section class="card">
         <h2 class="visually-hidden">Фото-галлерея мороженого</h2>
-        <div class="photo__card  photo__card_1">
-          <img class="photo__img  photo__img-1" src="#" alt="">
-          <b class="photo__price  photo__price_1">310 &#8381;/кг</b>
-          <p class="photo__desc  photo__desc_1">
-            Сливочное с апельсиновым джемом и цитрусовой стружкой
-          </p>
-        </div>
-        <div class="photo__card  photo__card_2">
-          <img class="photo__img  photo__img-2" src="#" alt="">
-          <b class="photo__price  photo__price_2">380 &#8381;/кг</b>
-          <p class="photo__desc  photo__desc_2">
-            Сливочно-кофейнок с кусочками шоколада
-          </p>
-        </div>
-        <div class="photo__card  photo__card_3">
-          <img class="photo__img  photo__img-3" src="#" alt="">
-          <b class="photo__price  photo__price_3">355 &#8381;/кг</b>
-          <p class="photo__desc  photo__desc_3">
-            Сливочно-клубничное с присыпкой из белого шоколада
-          </p>
-        </div>
-        <div class="photo__card  photo__card_4">
-          <img class="photo__img  photo__img-4" src="#" alt="">
-          <b class="photo__price  photo__price_4">415 &#8381;/кг</b>
-          <p class="photo__desc  photo__desc_4">
-            Сливочное крем-брюле с карамельной подливкой
-          </p>
-        </div>
+        <ul class="card__list">
+          <li class="card__item  card__item_1">
+            <img class="card__img  card__img_1" src="#" alt="">
+            <b class="card__price  card__price_1">310 &#8381;/кг</b>
+            <p class="card__desc  card__desc_1">
+              Сливочное с апельсиновым джемом и цитрусовой стружкой
+            </p>
+            <a class="card__link  card__link_hidden" href="#">Быстрый просмотр</a>
+          </li>
+          <li class="card__item  card__item_2">
+            <img class="card__img  card__img_2" src="#" alt="">
+            <b class="card__price  card__price_2">380 &#8381;/кг</b>
+            <p class="card__desc  card__desc_2">
+              Сливочно-кофейнок с кусочками шоколада
+            </p>
+            <a class="card__link  card__link_hidden" href="#">Быстрый просмотр</a>
+          </li>
+          <li class="card__item  card__item_3">
+            <img class="card__img  card__img_3" src="#" alt="">
+            <b class="card__price  card__price_3">355 &#8381;/кг</b>
+            <p class="card__desc  card__desc_3">
+              Сливочно-клубничное с присыпкой из белого шоколада
+            </p>
+            <a class="card__link  card__link_hidden" href="#">Быстрый просмотр</a>
+          </li>
+          <li class="card__item  card__item_4">
+            <img class="card__img  card__img_4" src="#" alt="">
+            <b class="card__price  card__price_4">415 &#8381;/кг</b>
+            <p class="card__desc  card__desc_4">
+              Сливочное крем-брюле с карамельной подливкой
+            </p>
+            <a class="card__link  card__link_hidden" href="#">Быстрый просмотр</a>
+          </li>
+        </ul>
       </section>
       <section class="about">
         <b class="about__title">Магазин Глэйси - это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</b>
@@ -208,82 +214,76 @@
         </li>
       </ul>
     </section>
-
-
-
-
-
-
-
-
     <section class="footer-info">
       <h2 class="visually-hidden">Информация о нас</h2>
       <ul class="footer-info__list">
-        <li class="footer-info__item  footer-info__item_">
+        <li class="footer-info__item  footer-info__item_1">
           <a href="#">Для поставщиков</a>
       </li>
-        <li class="footer-info__item  footer-info__item_">
+        <li class="footer-info__item  footer-info__item_2">
           <a href="#">О производстве</a>
       </li>
-        <li class="footer-info__item  footer-info__item_">
+        <li class="footer-info__item  footer-info__item_3">
           <a href="#">Наши документы</a>
       </li>
-        <li class="footer-info__item  footer-info__item_">
+        <li class="footer-info__item  footer-info__item_4">
           <a href="#">Экологические стандарты</a>
       </li>
       </ul>
     </section>
-    <section class="footer-made-logo">
-      <!-- made-logo -->
-      <p class="made-logo-text">
+    <section class="made-logo">
+      <!-- made-logo__img -->
+      <p class="made-logo__text">
         Сделано в HTML Academy &copy; 2017
       </p>
     </section>
   </footer>
   <section class="modal-catalog">
     <h2>Новинки</h2>
-    <ul class="modal-catalog-list">
-      <li class="modal-catalog-item">
-        <a href="#" class="modal-catalog-link">Сливочное</a>
+    <ul class="modal-catalog__list">
+      <li class="modal-catalog__item  modal-catalog__item_1">
+        <a href="#" class="modal-catalog__link">Сливочное</a>
       </li>
-      <li class="modal-catalog-item">
-        <a href="#" class="modal-catalog-link">Щербеты</a>
+      <li class="modal-catalog__item  modal-catalog__item_2">
+        <a href="#" class="modal-catalog__link">Щербеты</a>
       </li>
-      <li class="modal-catalog-item">
-        <a href="#" class="modal-catalog-link">Фруктовый лед</a>
+      <li class="modal-catalog__item  modal-catalog__item_3">
+        <a href="#" class="modal-catalog__link">Фруктовый лед</a>
       </li>
-      <li class="modal-catalog-item">
-        <a href="#" class="modal-catalog-link">Мелорин</a>
+      <li class="modal-catalog__item  modal-catalog__item_4">
+        <a href="#" class="modal-catalog__link">Мелорин</a>
       </li>
     </ul>
   </section>
   <section class="modal-user">
-    <form action="" class="modal-user-form">
-      <input type="email" placeholder="Электронная почта">
-      <input type="password" placeholder="пароль">
-      <div class="link-wrap">
-        <div class="left-col">
-          <button type="submit">Войти</button>
+    <form class="modal-user__form" action="">
+      <input class="modal-user__input  modal-user__input_email" type="email" placeholder="Электронная почта">
+      <input class="modal-user__input  modal-user__input_password" type="password" placeholder="пароль">
+      <div class="modal-user__link-wrap">
+        <div class="modal-user__left-col">
+          <button class="modal-user__btn" type="submit">Войти</button>
         </div>
-        <div class="right-col">
-          <a href="#" class="remember">Забыли пароль?</a>
-          <a href="#" class="new-registration">Новая регистрация</a>
+        <div class="modal-user__right-col">
+          <a class="modal-user__link  modal-user__link_rember" href="#">Забыли пароль?</a>
+          <a class="modal-user__link  modal-user__link_new-registration" href="#">Новая регистрация</a>
         </div>
       </div>
     </form>
   </section>
   <section class="modal-search">
-    <form action="" class="modal-search">
-      <input type="text" placeholder="Что ищем?">
+    <form class="modal-search__form" action="">
+      <input class="modal-search__input" type="text" placeholder="Что ищем?">
     </form>
   </section>
   <section class="modal-callback">
-    <form action="">
-      <button><span>Закрыть</span></button>
-      <input type="text" placeholder="Как вас зовут?">
-      <input type="text" placeholder="Ваша почта для ответа?">
-      <textarea id="" cols="30" rows="10" placeholder="Напишите что-нибудь"></textarea>
-      <button type="submit">Отправить</button>
+    <form class="modal-callback__form" action="">
+      <button class="modal-callback__btn modal-callback__close-btn" type="button">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
+      <input class="modal-callback__input modal-callback__input_name" type="text" placeholder="Как вас зовут?">
+      <input class="modal-callback__input modal-callback__input_email" type="text" placeholder="Ваша почта для ответа?">
+      <textarea class="modal-callback__input modal-callback__input_field" cols="30" rows="10" placeholder="Напишите что-нибудь"></textarea>
+      <button class="modal-callback__btn modal-callback__submit-btn" type="submit">Отправить</button>
     </form>
   </section>
   <script src="js/script.min.js"></script>
