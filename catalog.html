@@ -8,30 +8,31 @@
 </head>
 <body>
   <header class="page-header">
+    <h1 class="visually-hidden">Магазин Глейси</h1>
     <div class="page-header__logo">
       <!-- <svg class="page-header__img"></svg>img class="page-header__img" -->
     </div>
     <nav class="main-nav">
       <ul class="main-nav__info-list">
         <li class="main-nav__item">
-          <a class="main-nav__link" href="#">Каталог</a>
+          <a class="main-nav__link" href="#" aria-label="ссылка для перехода на страницу каталога">Каталог</a>
         </li>
         <li class="main-nav__item">
-          <a class="main-nav__link" href="#">Доставка и оплата</a>
+          <a class="main-nav__link" href="#" aria-label="ссылка для перехода на страницу с информацией о доставке и оплате">Доставка и оплата</a>
         </li>
         <li class="main-nav__item">
-          <a class="main-nav__link" href="#">О Компании</a>
+          <a class="main-nav__link" href="#" aria-label="ссылка для перехода на страницу с информацией о нашей компании">О Компании</a>
         </li>
       </ul>
       <ul class="main-nav__user-list">
         <li class="main-nav__user-item">
-          <a class="main-nav__user-link" href="#"></a>
+          <a class="main-nav__user-link" href="#" aria-label="кнопка для открытия окна с полем поиска"></a>
         </li>
         <li class="main-nav__user-item">
-          <a class="main-nav__user-link" href="#">Вход</a>
+          <a class="main-nav__user-link" href="#" aria-label="кнопка для открытия окна с формой входа в личный кабинет">Вход</a>
         </li>
         <li class="main-nav__user-item">
-          <a class="main-nav__user-link" href="#">Пусто</a>
+          <a class="main-nav__user-link" href="#" aria-label="ссылка для перехода на страницу корзины">Пусто</a>
         </li>
       </ul>
     </nav>
@@ -43,21 +44,40 @@
         8 812 450-25-25
       </b>
     </div>
-    <section class="breadcrumbs">
-          <h2 class="visually-hidden">Навигация по каталогу</h2>
-          <ul class="breadcrumbs__list">
-            <li class="breadcrumbs__item breadcrumbs__item_1">
-              <a class="breadcrumbs__link" href="index.html" aria-label="переход на главную страницу">Главная
-              </a>
-            </li>
-            <li class="breadcrumbs__item breadcrumbs__item_2">
-              <a class="breadcrumbs__link" href="#" aria-label="переход на страницу каталога">Каталог</a>
-            </li>
-            <li class="breadcrumbs__item breadcrumbs__item_3">
-              <a class="breadcrumbs__link" href="#" aria-label="переход на страницу сливочное мароженое">Сливочное</a>
-            </li>
-          </ul>
-        </section>
+    <section class="slider">
+      <h2 class="visually-hidden">Рекламные слайды</h2>
+      <ul class="slider__list">
+        <li class="slider__item  slider__item_1">
+          <b class="slider__title  slider__title_1">
+            Крем-брюле и пломбир с малиновым джемом
+          </b>
+          <a class="slider__button  slider__button_1" href="#" aria-label="ссылка для перехода на страницу каталога">Давайте оба</a>
+        </li>
+        <li class="slider__item  slider__item_2">
+          <b class="slider__title  slider__title_2">
+            Шоколадный пломбир и лимонный сорбет
+          </b>
+          <a class="slider__button  slider__button_2" href="#" aria-label="ссылка для перехода на страницу каталога">Давайте оба</a>
+        </li>
+        <li class="slider__item  slider__item_3">
+          <b class="slider__title  slider__title_3">
+            Пломбир с помадкой и клубничный щербет
+          </b>
+          <a class="slider__button  slider__button_3" href="#" aria-label="ссылка для перехода на страницу каталога">Давайте оба</a>
+        </li>
+      </ul>
+      <ul class="slider__list-controls">
+        <li class="slider__controls-item" aria-label="переключатель на слайд №1">
+          <button class="slider__controls-toggle slider__controls-toggle_active" type="button"></button>
+        </li>
+        <li class="slider__controls__item" aria-label="переключатель на слайд №2">
+          <button class="slider__controls-toggle" type="button"></button>
+        </li>
+        <li class="slider__controls__item" aria-label="переключатель на слайд №3">
+          <button class="slider__controls-toggle" type="button"></button>
+        </li>
+      </ul>
+    </section>
   </header>
   <main>
     <h1 class="">Сливочное мороженое</h1>
@@ -244,22 +264,22 @@
       <h2 class="visually-hidden">Ссылки на социальные сети</h2>
       <ul class="social__list">
         <li class="social__item  social__item_1">
-          <a class="social__link  social__link_tw" href="#">
+          <a class="social__link  social__link_tw" href="#" aria-label="ссылка на нашу страницу в социальной сети twitter">
             <span class="visually-hidden">twitter</span>
           </a>
         </li>
         <li class="social__item  social__item_2">
-          <a class="social__link  social__link_inst" href="#">
+          <a class="social__link  social__link_inst" href="#" aria-label="ссылка на нашу страницу в социальной сети instagram">
             <span class="visually-hidden">instagram</span>
           </a>
         </li>
         <li class="social__item  social__item_3">
-          <a class="social__link  social__link_fb" href="#">
+          <a class="social__link  social__link_fb" href="#" aria-label="ссылка на нашу страницу в социальной сети facebook">
             <span class="visually-hidden">facebook</span>
           </a>
         </li>
         <li class="social__item  social__item_4">
-          <a class="social__link  social__link_vk" href="#">
+          <a class="social__link  social__link_vk" href="#" aria-label="ссылка на нашу страницу в социальной сети вконтакте">
             <span class="visually-hidden">вконтакте</span>
           </a>
         </li>
@@ -269,16 +289,16 @@
       <h2 class="visually-hidden">Информация о нас</h2>
       <ul class="footer-info__list">
         <li class="footer-info__item  footer-info__item_1">
-          <a href="#">Для поставщиков</a>
+          <a href="#" aria-label="ссылка на нашу страницу с информациейдля поставщиков">Для поставщиков</a>
       </li>
         <li class="footer-info__item  footer-info__item_2">
-          <a href="#">О производстве</a>
+          <a href="#" aria-label="ссылка на нашу страницу с информацией о нашем производстве">О производстве</a>
       </li>
         <li class="footer-info__item  footer-info__item_3">
-          <a href="#">Наши документы</a>
+          <a href="#" aria-label="ссылка на нашу страницу с нашими документами">Наши документы</a>
       </li>
         <li class="footer-info__item  footer-info__item_4">
-          <a href="#">Экологические стандарты</a>
+          <a href="#" aria-label="ссылка на нашу страницу с информацией об экологических стандартах">Экологические стандарты</a>
       </li>
       </ul>
     </section>
@@ -293,23 +313,24 @@
   <div class="modal-sort">
     <ul class="modal-sort__list">
       <li class="modal-sort__item">
-        <a href="#">по популярности</a>
+        <a href="#" aria-label="кнопка отсортировать по популярности">по популярности</a>
       </li>
       <li class="modal-sort__item">
-        <a href="#">сначала недорогие</a>
+        <a href="#" aria-label="кнопка отсортировать по возрастанию цены">сначала недорогие</a>
       </li>
       <li class="modal-sort__item">
-        <a href="#">сначала дорогие</a>
+        <a href="#" aria-label="кнопка отсортировать по убыванию цены">сначала дорогие</a>
       </li>
       <li class="modal-sort__item">
-        <a href="#">по жирности</a>
+        <a href="#" aria-label="кнопка отсортировать по проценту жирности">по жирности</a>
       </li>
     </ul>
   </div>
-  <div class="modal-cart">
+  <section class="modal-cart">
+    <h2 class="visually-hidden">Окно корзины</h2>
     <ul class="modal-cart__list">
       <li class="modal-cart__item  modal-cart__item_1">
-        <button class="mocal-cart__del"><span class="visually-hidden">удалить</span></button>
+        <button class="mocal-cart__del" aria-label="кнопка удалить из корзины"><span class="visually-hidden">удалить</span></button>
         <table>
           <tr>
             <td><img src="#" alt=""></td>
@@ -320,7 +341,7 @@
         </table>
       </li>
       <li class="modal-cart__item  modal-cart__item_2">
-        <button class="mocal-cart__del"><span class="visually-hidden">удалить</span></button>
+        <button class="mocal-cart__del" aria-label="кнопка удалить из корзины"><span class="visually-hidden">удалить</span></button>
         <table>
           <tr>
             <td><img src="#" alt=""></td>
@@ -333,7 +354,46 @@
     </ul>
     <b>Итого: 750 руб.</b>
     <button>Оформить заказ</button>
-  </div>
+  </section>
+  <section class="modal-catalog">
+    <h2>Новинки</h2>
+    <ul class="modal-catalog__list">
+      <li class="modal-catalog__item  modal-catalog__item_1">
+        <a href="#" class="modal-catalog__link" aria-label="ссылка для перехода на страницу с нашими новинками в разделе Сливочное">Сливочное</a>
+      </li>
+      <li class="modal-catalog__item  modal-catalog__item_2">
+        <a href="#" class="modal-catalog__link" aria-label="ссылка для перехода на страницу с нашими новинками в разделе Щербеты">Щербеты</a>
+      </li>
+      <li class="modal-catalog__item  modal-catalog__item_3">
+        <a href="#" class="modal-catalog__link" aria-label="ссылка для перехода на страницу с нашими новинками в разделе Фруктовый лед">Фруктовый лед</a>
+      </li>
+      <li class="modal-catalog__item  modal-catalog__item_4">
+        <a href="#" class="modal-catalog__link" aria-label="ссылка для перехода на страницу с нашими новинками в разделе Мелорин">Мелорин</a>
+      </li>
+    </ul>
+  </section>
+  <section class="modal-user">
+    <h2 class="visually-hidden">Окно входа в личный кабинет</h2>
+    <form class="modal-user__form" action="https://echo.htmlacademy.ru" method="post" aria-label="форма входа в личный кабинет">
+      <input class="modal-user__input  modal-user__input_email" type="email" placeholder="Электронная почта" aria-label="поле ввода вашей электронной почты">
+      <input class="modal-user__input  modal-user__input_password" type="password" placeholder="пароль" aria-label="поле ввода вашего пароля">
+      <div class="modal-user__link-wrap">
+        <div class="modal-user__left-col">
+          <button class="modal-user__btn" type="submit" aria-label="кнопка входа в личный кабинет">Войти</button>
+        </div>
+        <div class="modal-user__right-col">
+          <a class="modal-user__link  modal-user__link_rember" href="#" aria-label="ссылка на страницу для восстановления пароля к личному кабинету">Забыли пароль?</a>
+          <a class="modal-user__link  modal-user__link_new-registration" href="#" aria-label="ссылка на страницу для регистрации">Новая регистрация</a>
+        </div>
+      </div>
+    </form>
+  </section>
+  <section class="modal-search">
+    <h2 class="visually-hidden">Окно с формой поиска</h2>
+    <form class="modal-search__form" action="https://echo.htmlacademy.ru" method="get" aria-label="форма поиска">
+      <input class="modal-search__input" type="text" placeholder="Что ищем?" aria-label="поле ввода для поиска">
+    </form>
+  </section>
   <script src="js/script.min.js"></script>
   <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </body>
