@@ -10,13 +10,13 @@
   <header class="page-header">
     <div class="container">
       <h1 class="visually-hidden">Магазин Глейси</h1>
-      <div class="logo">
-        <img class="logo__img" width="154" height="64" src="img/header-logo.svg" alt="логотип компании">
-      </div>
+      <p class="logo">
+        <img class="logo__img" width="154" height="64" src="img/header-logo.svg" alt="логотип Магазина Глейси">
+      </p>
       <nav class="main-nav">
-        <ul class="main-nav__info-list">
+        <ul class="main-nav__info-list  info-list">
           <li class="info-list__item  info-list__item_catalog">
-            <a class="info-list__link" aria-label="кнопка для открытия подменю">Каталог</a>
+            <a class="info-list__link" aria-label="кнопка для открытия подменю каталога">Каталог</a>
           </li>
           <li class="info-list__item  info-list__item_delivery">
             <a class="info-list__link" href="#" aria-label="ссылка для перехода на страницу с информацией о доставке и оплате">Доставка и оплата</a>
@@ -25,7 +25,7 @@
             <a class="info-list__link" href="#" aria-label="ссылка для перехода на страницу с информацией о нашей компании">О Компании</a>
           </li>
         </ul>
-        <ul class="main-nav__user-list">
+        <ul class="main-nav__user-list  user-list">
           <li class="user__item user__item_btn-search">
             <a class="user__link" href="#" aria-label="кнопка для открытия окна с формой поиска"></a>
           </li>
@@ -47,7 +47,7 @@
       </div>
       <section class="slider">
         <h2 class="visually-hidden">Рекламные слайды</h2>
-        <ul class="slider__list">
+        <ul class="slider__list-slides">
           <li class="slider__item  slider__item_slide1">
             <h3 class="slider__title">
               Крем-брюле и пломбир с малиновым джемом
@@ -68,14 +68,14 @@
           </li>
         </ul>
         <ul class="slider__list-controls">
-          <li class="slider__controls-item  slider__controls-item_1" aria-label="переключатель на слайд №1">
-            <button class="slider__controls-toggle slider__controls-toggle_active" type="button"></button>
+          <li class="slider__controls-item  slider__controls-item_1">
+            <button class="slider__controls-toggle slider__controls-toggle_active" type="button" aria-label="переключатель на слайд №1"></button>
           </li>
-          <li class="slider__controls__item  slider__controls-item_2" aria-label="переключатель на слайд №2">
-            <button class="slider__controls-toggle" type="button"></button>
+          <li class="slider__controls__item  slider__controls-item_2">
+            <button class="slider__controls-toggle" type="button" aria-label="переключатель на слайд №2"></button>
           </li>
-          <li class="slider__controls__item  slider__controls-item_3" aria-label="переключатель на слайд №3">
-            <button class="slider__controls-toggle" type="button"></button>
+          <li class="slider__controls__item  slider__controls-item_3">
+            <button class="slider__controls-toggle" type="button" aria-label="переключатель на слайд №3"></button>
           </li>
         </ul>
       </section>
@@ -110,41 +110,49 @@
         <h2 class="visually-hidden">Фото-галлерея мороженого</h2>
         <ul class="gallery__list">
           <li class="gallery__item  card card_card1">
-            <img class="card__img  card__img_1" src="#" alt="">
+            <p class="card__inner">
+              <img class="card__img  card__img_1" src="#" alt="Фото мороженого: Сливочное с апельсиновым джемом и цитрусовой стружкой">
+            </p>
             <b class="card__price">310 &#8381;/кг</b>
             <p class="card__desc  card__desc_1">
               Сливочное с апельсиновым джемом и цитрусовой стружкой
             </p>
-            <a class="card__link  card__link_hidden" href="#" aria-label="ссылка для перехода на страницу с информацией о товаре">Быстрый просмотр</a>
+            <a class="card__btn  btn  btn__card-link  btn__card-link_hidden" href="#" aria-label="ссылка для перехода на страницу с информацией о товаре">Быстрый просмотр</a>
           </li>
           <li class="gallery__item  card card_card2">
-            <img class="card__img  card__img_2" src="#" alt="">
+            <p class="card__inner">
+              <img class="card__img  card__img_2" src="#" alt="Фото мороженого: Сливочно-кофейное с кусочками шоколада">
+            </p>
             <b class="card__price">380 &#8381;/кг</b>
             <p class="card__desc  card__desc_2">
               Сливочно-кофейное с кусочками шоколада
             </p>
-            <a class="card__link  card__link_hidden" href="#" aria-label="ссылка для перехода на страницу с информацией о товаре">Быстрый просмотр</a>
+            <a class="card__btn  btn  btn__card-link  btn__card-link_hidden" href="#" aria-label="ссылка для перехода на страницу с информацией о товаре">Быстрый просмотр</a>
           </li>
           <li class="gallery__item  card card_card3">
-            <img class="card__img  card__img_3" src="#" alt="">
+            <p class="card__inner">
+              <img class="card__img  card__img_3" src="#" alt="Фото мороженого: Сливочно-клубничное с присыпкой из белого шоколада">
+            </p>
             <b class="card__price">355 &#8381;/кг</b>
             <p class="card__desc  card__desc_3">
               Сливочно-клубничное с присыпкой из белого шоколада
             </p>
-            <a class="card__link  card__link_hidden" href="#" aria-label="ссылка для перехода на страницу с информацией о товаре">Быстрый просмотр</a>
+            <a class="card__btn  btn  btn__card-link  btn__card-link_hidden" href="#" aria-label="ссылка для перехода на страницу с информацией о товаре">Быстрый просмотр</a>
           </li>
           <li class="gallery__item  card card_card4">
-            <img class="card__img  card__img_card4" src="#" alt="">
+            <p class="card__inner">
+              <img class="card__img  card__img_card4" src="#" alt="Фото мороженого: Сливочное крем-брюле с карамельной подливкой">
+            </p>
             <b class="card__price">415 &#8381;/кг</b>
             <p class="card__desc  card__desc_4">
               Сливочное крем-брюле с карамельной подливкой
             </p>
-            <a class="card__link  card__link_hidden" href="#" aria-label="ссылка для перехода на страницу с информацией о товаре">Быстрый просмотр</a>
+            <a class="card__btn  btn  btn__card-link  btn__card-link_hidden" href="#" aria-label="ссылка для перехода на страницу с информацией о товаре">Быстрый просмотр</a>
           </li>
         </ul>
       </section>
       <section class="about">
-        <h2 class="visually-hidden">О нас</h2>
+        <h2 class="visually-hidden">Информация о нас</h2>
         <b class="about__title">Магазин Глэйси - это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</b>
         <ul class="about__features-list">
           <li class="about__features-item  about__features-item_features1">
@@ -165,33 +173,33 @@
         <article class="blog">
           <h2 class="visually-hidden">Наш блог</h2>
           <p class="blog__text">Новое в нашем блоге</p>
-          <h3 class="blog__title">10 способов сервировки фруктовых щербетов к столу
-          </h3>
+          <a href="#" class="blog__title">10 способов сервировки фруктовых щербетов к столу
+          </a>
         </article>
         <section class="news">
-          <h2 class="visually-hidden">Подпишитесь на наши новости</h2>
+          <h2 class="visually-hidden">Подписка на нашу рассылку</h2>
           <p class="news__desc">
             Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
           </p>
-          <form class="form-subscribe" action="https://echo.htmlacademy.ru" method="post">
+          <form class="form-subscribe" action="https://echo.htmlacademy.ru" method="post" aria-label="форма подписки на наши рассылку">
             <input class="form-subscribe__input" type="text" placeholder="Электронная почта" aria-label="поле для ввода вашей электронной почты">
-            <button class="form-subscribe__btn  btn btn__form-subscribe" type="submit" aria-label="кнопка отправить форму">Отправить</button>
+            <button class="form-subscribe__btn  btn btn__form-subscribe" type="submit" aria-label="кнопка отправить ваши данные из формы">Отправить</button>
           </form>
         </section>
       </div>
     </div>
     <section class="map">
       <h2 class="visually-hidden">Контакты и адрес нашего офиса</h2>
-      <div class="map__inner">
+      <p class="map__inner">
         <img class="map__static-map" src="#" alt="Адрес нашего офиса: Санкт-Петербург, ул. Большая Конюшенная 19/8">
-      </div>
+      </p>
       <div class="map__adress-inner">
         <p class="map__adress-top-text">Адрес главного офиса<br> и офлайн-магазина:</p>
         <p class="map__adress">ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
         <p class="map__adress-text-middle">Для заказов по телефону:</p>
         <p class="map__adress-phone">8 812 450-25-25</p>
         <p class="map__adress-text-bottom">(с 10 до 20 ежедневно)</p>
-        <a class="map__btn btn btn__map_open" href="#" aria-label="кнопка открыть форму обратной связи">Форма обратной связи</a>
+        <a class="map__btn btn btn__map_open" href="#" aria-label="кнопка для открытия формы обратной связи">Форма обратной связи</a>
       </div>
     </section>
   </main>
@@ -230,28 +238,28 @@
         <h2 class="visually-hidden">Информация о нас</h2>
         <ul class="footer-info__list">
           <li class="footer-info__item  footer-info__item_1">
-            <a class="footer-info__link  footer-info__link_special" href="#" aria-label="ссылка на нашу страницу с информациейдля поставщиков">Для поставщиков</a>
+            <a class="footer-info__link  footer-info__link_special" href="#" aria-label="ссылка на страницу с информациейдля поставщиков">Для поставщиков</a>
         </li>
           <li class="footer-info__item  footer-info__item_2">
-            <a class="footer-info__link" href="#" aria-label="ссылка на нашу страницу с информацией о нашем производстве">О производстве</a>
+            <a class="footer-info__link" href="#" aria-label="ссылка на страницу с информацией о нашем производстве">О производстве</a>
         </li>
           <li class="footer-info__item  footer-info__item_3">
-            <a class="footer-info__link" href="#" aria-label="ссылка на нашу страницу с нашими документами">Наши документы</a>
+            <a class="footer-info__link" href="#" aria-label="ссылка на страницу с нашими документами">Наши документы</a>
         </li>
           <li class="footer-info__item  footer-info__item_4">
-            <a class="footer-info__link" href="#" aria-label="ссылка на нашу страницу с информацией об экологических стандартах">Экологические стандарты</a>
+            <a class="footer-info__link" href="#" aria-label="ссылка на страницу с информацией об экологических стандартах">Экологические стандарты</a>
         </li>
         </ul>
       </section>
       <section class="made-logo">
         <h2 class="visually-hidden">Разработчик сайта</h2>
         <div class="made-logo__inner">
-          <a class="made-logo__img" href="https://htmlacademy.ru/intensive/htmlcss">
+          <a class="made-logo__img" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="ссылка на лендинг интенсива «Профессиональный HTML и CSS, уровень 1»">
             <!-- <svg></svg> -->
           </a>
         </div>
         <p class="made-logo__text">
-          Сделано в <a class="made-logo__link" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy </a>&copy; 2017
+          Сделано в <a class="made-logo__link" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="ссылка на лендинг интенсива «Профессиональный HTML и CSS, уровень 1»">HTML Academy </a>&copy; 2017
         </p>
       </section>
     </div>
@@ -260,27 +268,27 @@
     <h2>Новинки</h2>
     <ul class="modal-catalog__list">
       <li class="modal-catalog__item  modal-catalog__item_1">
-        <a class="modal-catalog__link" href="catalog.html" aria-label="ссылка для перехода на страницу с нашими новинками в разделе Сливочное">Сливочное</a>
+        <a class="modal-catalog__link" href="catalog.html" aria-label="ссылка для перехода на страницу с новинками в разделе Сливочное">Сливочное</a>
       </li>
       <li class="modal-catalog__item  modal-catalog__item_2">
-        <a class="modal-catalog__link" href="#" aria-label="ссылка для перехода на страницу с нашими новинками в разделе Щербеты">Щербеты</a>
+        <a class="modal-catalog__link" href="#" aria-label="ссылка для перехода на страницу с новинками в разделе Щербеты">Щербеты</a>
       </li>
       <li class="modal-catalog__item  modal-catalog__item_3">
-        <a class="modal-catalog__link" href="#" aria-label="ссылка для перехода на страницу с нашими новинками в разделе Фруктовый лед">Фруктовый лед</a>
+        <a class="modal-catalog__link" href="#" aria-label="ссылка для перехода на страницу с новинками в разделе Фруктовый лед">Фруктовый лед</a>
       </li>
       <li class="modal-catalog__item  modal-catalog__item_4">
-        <a class="modal-catalog__link" href="#" aria-label="ссылка для перехода на страницу с нашими новинками в разделе Мелорин">Мелорин</a>
+        <a class="modal-catalog__link" href="#" aria-label="ссылка для перехода на страницу с новинками в разделе Мелорин">Мелорин</a>
       </li>
     </ul>
   </section>
   <section class="modal-user modal-user_hidden">
     <h2 class="visually-hidden">Окно входа в личный кабинет</h2>
     <form class="form-user" action="https://echo.htmlacademy.ru" method="post" aria-label="форма входа в личный кабинет">
-      <input class="form-user__input" type="email" placeholder="Электронная почта" aria-label="поле ввода вашей электронной почты">
-      <input class="form-user__input" type="password" placeholder="пароль" aria-label="поле ввода вашего пароля">
+      <input class="form-user__input  form-user__input_email" type="email" placeholder="Электронная почта" aria-label="поле ввода вашей электронной почты">
+      <input class="form-user__input  form-user__input_password" type="password" placeholder="пароль" aria-label="поле ввода вашего пароля">
       <div class="form-user__link-inner">
         <div class="form-user__left-col">
-          <button class="form-user__btn" type="submit" aria-label="кнопка входа в личный кабинет">Войти</button>
+          <button class="form-user__btn btn btn__form-user" type="submit" aria-label="кнопка отправки ваших данных для входа в личный кабинет">Войти</button>
         </div>
         <div class="form-user__right-col">
           <a class="form-user__link" href="#" aria-label="ссылка на страницу для восстановления пароля к личному кабинету">Забыли пароль?</a>
@@ -296,14 +304,15 @@
     </form>
   </section>
   <section class="modal-callback modal-callback_hidden">
-    <h2 class="visually-hidden">Окно с обратной связью</h2>
-    <button class="modal-callback__btn modal-callback__close-btn" type="button" aria-label="кнопка закрыть окно обратной связи">
+    <h2 class="visually-hidden">Обратная связь</h2>
+    <b class="modal-callback__title">Мы обязательно вам ответим!</b>
+    <button class="modal-callback__btn modal-callback__close-btn" type="button" aria-label="кнопка для закрытия окна обратной связи">
       <span class="visually-hidden">Закрыть</span>
     </button>
-    <form class="form-callback" action="https://echo.htmlacademy.ru" method="GET" aria-label="форма для обратной связи с нами">
-      <input class="form-callback__input" type="text" placeholder="Как вас зовут?" aria-label="поле для ввода вашего имени">
-      <input class="form-callback__input" type="text" placeholder="Ваша почта для ответа?" aria-label="поле для ввода вашей электронной почты">
-      <textarea class="form-callback__input  form-callback__input_area" cols="30" rows="10" placeholder="Напишите что-нибудь" aria-label="поле для ввода вашего обращения"></textarea>
+    <form class="form-callback" action="https://echo.htmlacademy.ru" method="GET" aria-label="форма для обратной связи">
+      <input class="form-callback__input  form-callback__input_name" type="text" placeholder="Как вас зовут?" aria-label="поле для ввода вашего имени">
+      <input class="form-callback__input  form-callback__input_email" type="text" placeholder="Ваша почта для ответа?" aria-label="поле для ввода вашей электронной почты">
+      <textarea class="form-callback__input  form-callback__input_area" cols="30" rows="10" placeholder="Напишите что-нибудь" aria-label="поле для ввода теуста вашего обращения"></textarea>
       <button class="form-callback__btn form-callback__submit-btn" type="submit" aria-label="кнопка отправить ваше обращение">Отправить</button>
     </form>
   </section>

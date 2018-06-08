@@ -9,15 +9,15 @@
 <body>
   <header class="page-header">
     <div class="container">
-      <div class="logo">
-        <a class="logo__link" href="index.html">
-          <img class="logo__img" width="154" height="64" src="img/header-logo.svg" alt="логотип компании, ссылка на главную страницу">
+      <p class="logo">
+        <a class="logo__link" href="index.html" aria-label="ссылка для перехода на главную страницу">
+          <img class="logo__img" width="154" height="64" src="img/header-logo.svg" alt="логотип Магазина Глейси">
         </a>
-      </div>
+      </p>
       <nav class="main-nav">
-        <ul class="main-nav__info-list">
+        <ul class="main-nav__info-list  info-list">
           <li class="info-list__item  info-list__item_catalog">
-            <a class="info-list__link" aria-label="кнопка для открытия подменю">Каталог</a>
+            <a class="info-list__link" aria-label="кнопка для открытия подменю каталога">Каталог</a>
           </li>
           <li class="info-list__item  info-list__item_delivery">
             <a class="info-list__link" href="#" aria-label="ссылка для перехода на страницу с информацией о доставке и оплате">Доставка и оплата</a>
@@ -26,7 +26,7 @@
             <a class="info-list__link" href="#" aria-label="ссылка для перехода на страницу с информацией о нашей компании">О Компании</a>
           </li>
         </ul>
-        <ul class="main-nav__user-list">
+        <ul class="main-nav__user-list  user-list">
           <li class="user__item user__item_btn-search">
             <a class="user__link" href="#" aria-label="кнопка для открытия окна с формой поиска"></a>
           </li>
@@ -50,23 +50,24 @@
   </header>
   <main>
     <section class="breadcrumps">
+      <h2 class="visually-hidden">Навигация по сайту</h2>
       <ul class="breadcrumps__list">
         <li class="breadcrumps__item  breadcrumps__item_1">
-          <a href="index.html" class="breadcrumps__link">Главная</a>
+          <a class="breadcrumps__link" href="index.html">Главная</a>
         </li>
         <li class="breadcrumps__item  breadcrumps__item_2">
-          <a href="#" class="breadcrumps__link">Каталог</a>
+          <a class="breadcrumps__link" href="#">Каталог</a>
         </li>
         <li class="breadcrumps__item  breadcrumps__item_3">
-          <a href="#" class="breadcrumps__link">Сливочное</a>
+          <a class="breadcrumps__link" href="#">Сливочное</a>
         </li>
       </ul>
     </section>
     <h1 class="page-title">Сливочное мороженое</h1>
-    <form class="form-filter" action="https://echo.htmlacademy.ru" method="GET">
+    <form class="form-filter" action="https://echo.htmlacademy.ru" method="GET" aria-label="форма сортировки мороженого">
       <fieldset class="form-filter__field">
         <legend class="form-filter__field-title">Сортировка:</legend>
-        <a class="form-filter__option-link" href="#">По популярности</a>
+        <a class="form-filter__option-link" href="#" aria-label="отсортировать по популярности">По популярности</a>
       </fieldset>
       <fieldset class="form-filter__field">
         <legend class="form-filter__title">Цена:</legend>
@@ -79,8 +80,8 @@
             <div class="price-range__toggle price-range__toggle-max" aria-label="индикатор максимальной цены"></div>
           </div>
           <div class="price-range__input-text">
-            <input name="price-range__input  price-range__input_min" type="text" placeholder="0" aria-label="поле для ввода минимальной цены">
-            <input name="price-range__input  price-range__input_max" type="text" placeholder="30000" aria-label="поле для ввода максимальной цены">
+            <input name="price-range__input  price-range__input_min" type="text" placeholder="100" aria-label="поле для ввода минимальной цены">
+            <input name="price-range__input  price-range__input_max" type="text" placeholder="500" aria-label="поле для ввода максимальной цены">
           </div>
         </div>
       </fieldset>
@@ -130,131 +131,155 @@
           </li>
         </ul>
       </fieldset>
-      <button class="form-filter__btn-submit" type="submit">Применить</button>
+      <button class="form-filter__btn-submit" type="submit" aria-label="кнопка для применения опций сортировки">Применить</button>
     </form>
     <section class="result">
       <h2 class="visually-hidden">Результат выбора</h2>
       <ul class="result__list">
         <li class="result__item  card card_card1">
-            <img class="card__img  card__img_1" src="#" alt="">
-            <b class="card__price">310 &#8381;/кг</b>
-            <p class="card__desc  card__desc_1">
-            Сливочное с апельсиновым джемом и цитрусовой стружкой
-            </p>
-            <a class="card__link  card__link_hidden" href="#">Быстрый просмотр</a>
+          <p class="card__img-inner">
+            <img class="card__img  card__img_1" src="#" alt="Фото мороженого: Сливочное с апельсиновым джемом и цитрусовой стружкой">
+          </p>
+          <b class="card__price">310 &#8381;/кг</b>
+          <p class="card__desc  card__desc_1">
+          Сливочное с апельсиновым джемом и цитрусовой стружкой
+          </p>
+          <a class="card__btn  btn  btn__card-link  btn__card-link_hidden" href="#" aria-label="ссылка для перехода на страницу с информацией о товаре">Быстрый просмотр</a>
         </li>
         <li class="result__item  card card_card2">
-            <img class="card__img  card__img_2" src="#" alt="">
-            <b class="card__price">380 &#8381;/кг</b>
-            <p class="card__desc  card__desc_2">
-            Сливочно-кофейное с кусочками шоколада
-            </p>
-            <a class="card__link  card__link_hidden" href="#">Быстрый просмотр</a>
+          <p class="card__img-inner">
+            <img class="card__img  card__img_2" src="#" alt="Фото мороженого: Сливочно-кофейное с кусочками шоколада">
+          </p>
+          <b class="card__price">380 &#8381;/кг</b>
+          <p class="card__desc  card__desc_2">
+          Сливочно-кофейное с кусочками шоколада
+          </p>
+          <a class="card__btn  btn  btn__card-link  btn__card-link_hidden" href="#" aria-label="ссылка для перехода на страницу с информацией о товаре">Быстрый просмотр</a>
         </li>
         <li class="result__item  card card_card3">
-            <img class="card__img  card__img_3" src="#" alt="">
-            <b class="card__price">355 &#8381;/кг</b>
-            <p class="card__desc  card__desc_3">
-                Сливочно-клубничное с присыпкой из белого шоколада
-            </p>
-            <a class="card__link  card__link_hidden" href="#">Быстрый просмотр</a>
+          <p class="card__img-inner">
+            <img class="card__img  card__img_3" src="#" alt="Фото мороженого: Сливочно-клубничное с присыпкой из белого шоколада">
+          </p>
+          <b class="card__price">355 &#8381;/кг</b>
+          <p class="card__desc  card__desc_3">
+              Сливочно-клубничное с присыпкой из белого шоколада
+          </p>
+          <a class="card__btn  btn  btn__card-link  btn__card-link_hidden" href="#" aria-label="ссылка для перехода на страницу с информацией о товаре">Быстрый просмотр</a>
         </li>
         <li class="result__item  card card_card4">
-            <img class="card__img  card__img_4" src="#" alt="">
-            <b class="card__price">415 &#8381;/кг</b>
-            <p class="card__desc  card__desc_4">
-            Сливочное крем-брюле с карамельной подливкой
-            </p>
-            <a class="card__link  card__link_hidden" href="#">Быстрый просмотр</a>
+          <p class="card__img-inner">
+            <img class="card__img  card__img_4" src="#" alt="Фото мороженого: Сливочное крем-брюле с карамельной подливкой">
+          </p>
+          <b class="card__price">415 &#8381;/кг</b>
+          <p class="card__desc  card__desc_4">
+          Сливочное крем-брюле с карамельной подливкой
+          </p>
+          <a class="card__btn  btn  btn__card-link  btn__card-link_hidden" href="#" aria-label="ссылка для перехода на страницу с информацией о товаре">Быстрый просмотр</a>
         </li>
         <li class="result__item  card card_card5">
-            <img class="card__img  card__img_5" src="#" alt="">
-            <b class="card__price">325 &#8381;/кг</b>
-            <p class="card__desc  card__desc_5">
-            Сливочное с брусничным джемом</p>
-            <a class="card__link  card__link_hidden" href="#">Быстрый просмотр</a>
+          <p class="card__img-inner">
+            <img class="card__img  card__img_5" src="#" alt="Фото мороженого: Сливочное с брусничным джемом">
+          </p>
+          <b class="card__price">325 &#8381;/кг</b>
+          <p class="card__desc  card__desc_5">
+          Сливочное с брусничным джемом</p>
+          <a class="card__btn  btn  btn__card-link  btn__card-link_hidden" href="#" aria-label="ссылка для перехода на страницу с информацией о товаре">Быстрый просмотр</a>
         </li>
         <li class="result__item  card card_card6">
-            <img class="card__img  card__img_6" src="#" alt="">
-            <b class="card__price">410 &#8381;/кг</b>
-            <p class="card__desc  card__desc_6">
-            Сливочное-черничное с цельными ягодами черники</p>
-            <a class="card__link  card__link_hidden" href="#">Быстрый просмотр</a>
+          <p class="card__img-inner">
+            <img class="card__img  card__img_6" src="#" alt="Фото мороженого: Сливочное-черничное с цельными ягодами черники">
+          </p>
+          <b class="card__price">410 &#8381;/кг</b>
+          <p class="card__desc  card__desc_6">
+          Сливочное-черничное с цельными ягодами черники</p>
+          <a class="card__btn  btn  btn__card-link  btn__card-link_hidden" href="#" aria-label="ссылка для перехода на страницу с информацией о товаре">Быстрый просмотр</a>
         </li>
         <li class="result__item  card card_card7">
-            <img class="card__img  card__img_7" src="#" alt="">
-            <b class="card__price">375 &#8381;/кг</b>
-            <p class="card__desc  card__desc_7">
-            Сливочно-лимонное с карамельной присыпкой</p>
-            <a class="card__link  card__link_hidden" href="#">Быстрый просмотр</a>
+          <p class="card__img-inner">
+            <img class="card__img  card__img_7" src="#" alt="Фото мороженого: Сливочно-лимонное с карамельной присыпкой">
+          </p>
+          <b class="card__price">375 &#8381;/кг</b>
+          <p class="card__desc  card__desc_7">
+          Сливочно-лимонное с карамельной присыпкой</p>
+          <a class="card__btn  btn  btn__card-link  btn__card-link_hidden" href="#" aria-label="ссылка для перехода на страницу с информацией о товаре">Быстрый просмотр</a>
         </li>
         <li class="result__item  card card_card8">
-            <img class="card__img  card__img_8" src="#" alt="">
-            <b class="card__price">320 &#8381;/кг</b>
-            <p class="card__desc  card__desc_8">
-            Сливочное с шоколадной стружкой
-            </p>
-            <a class="card__link  card__link_hidden" href="#">Быстрый просмотр</a>
+          <p class="card__img-inner">
+            <img class="card__img  card__img_8" src="#" alt="Фото мороженого: Сливочное с шоколадной стружкой">
+          </p>
+          <b class="card__price">320 &#8381;/кг</b>
+          <p class="card__desc  card__desc_8">
+          Сливочное с шоколадной стружкой
+          </p>
+          <a class="card__btn  btn  btn__card-link  btn__card-link_hidden" href="#" aria-label="ссылка для перехода на страницу с информацией о товаре">Быстрый просмотр</a>
         </li>
         <li class="result__item  card card_card9">
-            <img class="card__img  card__img_9" src="#" alt="">
-            <b class="card__price">440 &#8381;/кг</b>
-            <p class="card__desc  card__desc_9">
-            Сливочно-ванильное с кусочками шоколада</p>
-            <a class="card__link  card__link_hidden" href="#">Быстрый просмотр</a>
+          <p class="card__img-inner">
+            <img class="card__img  card__img_9" src="#" alt="Фото мороженого: Сливочно-ванильное с кусочками шоколада">
+          </p>
+          <b class="card__price">440 &#8381;/кг</b>
+          <p class="card__desc  card__desc_9">
+          Сливочно-ванильное с кусочками шоколада</p>
+          <a class="card__btn  btn  btn__card-link  btn__card-link_hidden" href="#" aria-label="ссылка для перехода на страницу с информацией о товаре">Быстрый просмотр</a>
         </li>
         <li class="result__item  card card_card10">
-            <img class="card__img  card__img_10" src="#" alt="">
-            <b class="card__price">435 &#8381;/кг</b>
-            <p class="card__desc  card__desc_10">
-            Сливочное с ментоловым сиропом</p>
-            <a class="card__link  card__link_hidden" href="#">Быстрый просмотр</a>
+          <p class="card__img-inner">
+            <img class="card__img  card__img_10" src="#" alt="Фото мороженого: Сливочное с ментоловым сиропом">
+          </p>
+          <b class="card__price">435 &#8381;/кг</b>
+          <p class="card__desc  card__desc_10">
+          Сливочное с ментоловым сиропом</p>
+          <a class="card__btn  btn  btn__card-link  btn__card-link_hidden" href="#" aria-label="ссылка для перехода на страницу с информацией о товаре">Быстрый просмотр</a>
         </li>
         <li class="result__item  card card_card11">
-            <img class="card__img  card__img_11" src="#" alt="">
-            <b class="card__price">355 &#8381;/кг</b>
-            <p class="card__desc  card__desc_11">
-            Сливочное с кусочками черного шоколада</p>
-            <a class="card__link  card__link_hidden" href="#">Быстрый просмотр</a>
+          <p class="card__img-inner">
+            <img class="card__img  card__img_11" src="#" alt="Фото мороженого: Сливочное с кусочками черного шоколада">
+          </p>
+          <b class="card__price">355 &#8381;/кг</b>
+          <p class="card__desc  card__desc_11">
+          Сливочное с кусочками черного шоколада</p>
+          <a class="card__btn  btn  btn__card-link  btn__card-link_hidden" href="#" aria-label="ссылка для перехода на страницу с информацией о товаре">Быстрый просмотр</a>
         </li>
         <li class="result__item  card card_card12">
-            <img class="card__img  card__img_12" src="#" alt="">
-            <b class="card__price">420 &#8381;/кг</b>
-            <p class="card__desc  card__desc_12">
-            Сливочное с мятным сиропом</p>
-            <a class="card__link  card__link_hidden" href="#">Быстрый просмотр</a>
+          <p class="card__img-inner">
+            <img class="card__img  card__img_12" src="#" alt="Фото мороженого: Сливочное с мятным сиропом">
+          </p>
+          <b class="card__price">420 &#8381;/кг</b>
+          <p class="card__desc  card__desc_12">
+          Сливочное с мятным сиропом</p>
+          <a class="card__btn  btn  btn__card-link  btn__card-link_hidden" href="#" aria-label="ссылка для перехода на страницу с информацией о товаре">Быстрый просмотр</a>
         </li>
       </ul>
+      <div class="pagination">
+        <ul class="pagination__list">
+          <li class="pagination__item">
+            <a class="pagination__link  pagination__link_prev" href="#" aria-label="ссылка для перехода на предыдущую страницу">
+              <span class="visually-hidden">prev</span>
+            </a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link  pagination__link_active" href="#" aria-label="активная страница">1</a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link" href="#" aria-label="ссылка для перехода на страницу 2">2</a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link" href="#" aria-label="ссылка для перехода на страницу 3">3</a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link" href="#" aria-label="ссылка для перехода на страницу 4">4</a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link" href="#" aria-label="ссылка для перехода на страницу 5">5</a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link  pagination__link_next" href="#" aria-label="ссылка для перехода на следующую страницу">
+              <span class="visually-hidden">next</span>
+            </a>
+          </li>
+        </ul>
+      </div>
     </section>
-    <div class="pagination">
-      <ul class="pagination__list">
-        <li class="pagination__item">
-          <a class="pagination__link  pagination__link_prev" href="#">
-            <span class="visually-hidden">prev</span>
-          </a>
-        </li>
-        <li class="pagination__item  pagination__item_active">
-          <a class="pagination__link" href="#">1</a>
-        </li>
-        <li class="pagination__item">
-          <a class="pagination__link" href="#">2</a>
-        </li>
-        <li class="pagination__item">
-          <a class="pagination__link" href="#">3</a>
-        </li>
-        <li class="pagination__item">
-          <a class="pagination__link" href="#">4</a>
-        </li>
-        <li class="pagination__item">
-          <a class="pagination__link" href="#">5</a>
-        </li>
-        <li class="pagination__item">
-          <a class="pagination__link  pagination__link_next" href="#">
-            <span class="visually-hidden">next</span>
-          </a>
-        </li>
-      </ul>
-    </div>
   </main>
   <footer class="main-footer">
     <div class="container">
@@ -291,28 +316,28 @@
         <h2 class="visually-hidden">Информация о нас</h2>
         <ul class="footer-info__list">
           <li class="footer-info__item  footer-info__item_1">
-            <a class="footer-info__link  footer-info__link_special" href="#" aria-label="ссылка на нашу страницу с информациейдля поставщиков">Для поставщиков</a>
+            <a class="footer-info__link  footer-info__link_special" href="#" aria-label="ссылка на страницу с информациейдля поставщиков">Для поставщиков</a>
         </li>
           <li class="footer-info__item  footer-info__item_2">
-            <a class="footer-info__link" href="#" aria-label="ссылка на нашу страницу с информацией о нашем производстве">О производстве</a>
+            <a class="footer-info__link" href="#" aria-label="ссылка на страницу с информацией о нашем производстве">О производстве</a>
         </li>
           <li class="footer-info__item  footer-info__item_3">
-            <a class="footer-info__link" href="#" aria-label="ссылка на нашу страницу с нашими документами">Наши документы</a>
+            <a class="footer-info__link" href="#" aria-label="ссылка на страницу с нашими документами">Наши документы</a>
         </li>
           <li class="footer-info__item  footer-info__item_4">
-            <a class="footer-info__link" href="#" aria-label="ссылка на нашу страницу с информацией об экологических стандартах">Экологические стандарты</a>
+            <a class="footer-info__link" href="#" aria-label="ссылка на страницу с информацией об экологических стандартах">Экологические стандарты</a>
         </li>
         </ul>
       </section>
       <section class="made-logo">
         <h2 class="visually-hidden">Разработчик сайта</h2>
         <div class="made-logo__inner">
-          <a class="made-logo__img" href="https://htmlacademy.ru/intensive/htmlcss">
+          <a class="made-logo__img" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="ссылка на лендинг интенсива «Профессиональный HTML и CSS, уровень 1»">
             <!-- <svg></svg> -->
           </a>
         </div>
         <p class="made-logo__text">
-          Сделано в <a class="made-logo__link" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy </a>&copy; 2017
+          Сделано в <a class="made-logo__link" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="ссылка на лендинг интенсива «Профессиональный HTML и CSS, уровень 1»">HTML Academy </a>&copy; 2017
         </p>
       </section>
     </div>
@@ -360,33 +385,33 @@
       </li>
     </ul>
     <b class="modal-cart__text">Итого: 750 руб.</b>
-    <button class="modal-cart__btn btn btn__modal-cart_submit ">Оформить заказ</button>
+    <button class="modal-cart__btn btn btn__modal-cart_submit" aria-label="ссылка для перехода на страницу с оформлением заказа">Оформить заказ</button>
   </section><!-- убрать таблицу -->
   <section class="modal-catalog modal-catalog_hidden">
     <h2>Новинки</h2>
     <ul class="modal-catalog__list">
       <li class="modal-catalog__item  modal-catalog__item_1">
-        <a class="modal-catalog__link" href="catalog.html" aria-label="ссылка для перехода на страницу с нашими новинками в разделе Сливочное">Сливочное</a>
+        <a class="modal-catalog__link" href="catalog.html" aria-label="ссылка для перехода на страницу с новинками в разделе Сливочное">Сливочное</a>
       </li>
       <li class="modal-catalog__item  modal-catalog__item_2">
-        <a class="modal-catalog__link" href="#" aria-label="ссылка для перехода на страницу с нашими новинками в разделе Щербеты">Щербеты</a>
+        <a class="modal-catalog__link" href="#" aria-label="ссылка для перехода на страницу с новинками в разделе Щербеты">Щербеты</a>
       </li>
       <li class="modal-catalog__item  modal-catalog__item_3">
-        <a class="modal-catalog__link" href="#" aria-label="ссылка для перехода на страницу с нашими новинками в разделе Фруктовый лед">Фруктовый лед</a>
+        <a class="modal-catalog__link" href="#" aria-label="ссылка для перехода на страницу с новинками в разделе Фруктовый лед">Фруктовый лед</a>
       </li>
       <li class="modal-catalog__item  modal-catalog__item_4">
-        <a class="modal-catalog__link" href="#" aria-label="ссылка для перехода на страницу с нашими новинками в разделе Мелорин">Мелорин</a>
+        <a class="modal-catalog__link" href="#" aria-label="ссылка для перехода на страницу с новинками в разделе Мелорин">Мелорин</a>
       </li>
     </ul>
   </section>
   <section class="modal-user modal-user_hidden">
     <h2 class="visually-hidden">Окно входа в личный кабинет</h2>
     <form class="form-user" action="https://echo.htmlacademy.ru" method="post" aria-label="форма входа в личный кабинет">
-      <input class="form-user__input" type="email" placeholder="Электронная почта" aria-label="поле ввода вашей электронной почты">
-      <input class="form-user__input" type="password" placeholder="пароль" aria-label="поле ввода вашего пароля">
+      <input class="form-user__input  form-user__input_email" type="email" placeholder="Электронная почта" aria-label="поле ввода вашей электронной почты">
+      <input class="form-user__input  form-user__input_password" type="password" placeholder="пароль" aria-label="поле ввода вашего пароля">
       <div class="form-user__link-inner">
         <div class="form-user__left-col">
-          <button class="form-user__btn" type="submit" aria-label="кнопка входа в личный кабинет">Войти</button>
+          <button class="form-user__btn btn btn__form-user" type="submit" aria-label="кнопка отправки ваших данных для входа в личный кабинет">Войти</button>
         </div>
         <div class="form-user__right-col">
           <a class="form-user__link" href="#" aria-label="ссылка на страницу для восстановления пароля к личному кабинету">Забыли пароль?</a>
