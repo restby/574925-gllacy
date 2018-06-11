@@ -41,6 +41,7 @@ input[type="radio"].visually-hidden {
   border-radius: 18px;
 }
 /*gloabal*/
+/*header*/
 .page-header .container {
   padding-top: 9px;
 }
@@ -177,6 +178,8 @@ input[type="radio"].visually-hidden {
 .work-schedule__number {
 
 }
+/*header*/
+/*main*/
 .action {
   margin-bottom: 40px;
 }
@@ -324,6 +327,8 @@ input[type="radio"].visually-hidden {
   margin: 0;
   margin-right: 26px;
 }
+/*main*/
+/*footer*/
 .main-footer .container {
   display: flex;
 }
@@ -359,3 +364,4 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-wrap: wrap;
 }
+/*footer*/
