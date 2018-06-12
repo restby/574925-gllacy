@@ -47,7 +47,7 @@ input[type="radio"].visually-hidden {
 .page-header .container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  position: relative;
 }
 .logo {
   display: block;
@@ -63,19 +63,16 @@ input[type="radio"].visually-hidden {
 .main-nav__info-list {
   display: flex;
   margin: 0;
-  margin-right: 319px;
+  margin-right: 356px;
   padding: 0;
-  padding-top: 24px;
+  padding-top: 18px;
   list-style: none;
 }
 .info-list__item_catalog {
   margin-right: 27px;
 }
 .info-list__item_delivery {
-  margin-right: 30px;
-}
-.info-list__item_about {
-  margin-right: 33px;
+  margin-right: 28px;
 }
 .info-list__link {
   font-size: 16px;
@@ -124,7 +121,7 @@ input[type="radio"].visually-hidden {
 .user__link_btn-account {
   position: relative;
   padding-top: 8px;
-  padding-right: 16px;
+  padding-right: 18px;
   padding-bottom: 8px;
   padding-left: 43px;
   border-radius: 18px;
@@ -160,11 +157,60 @@ input[type="radio"].visually-hidden {
   background-position: 0 0;
 }
 .work-schedule {
+  width: 267px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-end;
+  position: absolute;
+  right: 0;
+  top: 75px;
 }
+.work-schedule__time {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  color: #ffffff;
+}
+.work-schedule__number {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #ffffff;
+}
+.slider {
 
+}
+.slider__list-slides {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.slider__item {
+  position: relative;
 
+}
+.slider__item_slide1 {
+
+}
+.slider__img {
+  position: relative;
+  margin-top: -73px;
+  margin-left: 50px;
+  z-index:-1;
+}
+.slider__title {
+  position: absolute;
+  top: 257px;
+  left: 238px;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 60px;
+  color: #ffffff;
+  text-align: center;
+}
+.slider__item_hidden {
+  display: none;
+}
 /*header*/
 /*main*/
 .action {
@@ -216,7 +262,7 @@ input[type="radio"].visually-hidden {
   margin-bottom: 23px;
 }
 .btn__action-raspberry {
-  margin-left: 373px;
+  margin-left: 370px;
   padding-top: 11px;
   padding-right: 20px;
   padding-bottom: 11px;
