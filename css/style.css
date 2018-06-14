@@ -9,9 +9,6 @@ body {
   padding: 0;
   color: #ffffff;
   background-color: #849d8f;
-  background-image: url(../img/header-slide-1.png);
-  background-repeat: no-repeat;
-  background-position: 50% 0;
 }
 a {
   text-decoration: none;
@@ -43,6 +40,11 @@ input[type="radio"].visually-hidden {
   box-shadow: 0 2px 2px 0 rgba(172, 16, 0, 0.64);
 }
 /*gloabal*/
+.index{
+  background-image: url(../img/header-slide-1.png);
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+}
 /*header*/
 .page-header .container {
   padding-top: 9px;
