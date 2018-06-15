@@ -5,7 +5,7 @@
   <title>HTML Academy: Глейси</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
 </head>
 <body class="index">
   <header class="page-header">
@@ -17,7 +17,7 @@
         </p>
         <ul class="main-nav__info-list  info-list">
           <li class="info-list__item  info-list__item_catalog">
-            <a class="info-list__link" aria-label="кнопка для открытия подменю каталога">Каталог</a>
+            <a class="info-list__link" href="catalog.html" aria-label="кнопка для открытия подменю каталога">Каталог</a>
           </li>
           <li class="info-list__item  info-list__item_delivery">
             <a class="info-list__link" href="#" aria-label="ссылка для перехода на страницу с информацией о доставке и оплате">Доставка и оплата</a>
@@ -38,6 +38,45 @@
             <a class="user__link  user__link_btn-cart" href="#" aria-label="ссылка для перехода на страницу корзины">Пусто</a>
           </li>
         </ul>
+        <section class="modal-catalog modal-catalog_hidden">
+          <h2 class="modal-catalog__title">Новинки</h2>
+          <ul class="modal-catalog__list">
+            <li class="modal-catalog__item  modal-catalog__item_1">
+              <a class="modal-catalog__link" href="catalog.html" aria-label="ссылка для перехода на страницу с новинками в разделе Сливочное">Сливочное</a>
+            </li>
+            <li class="modal-catalog__item  modal-catalog__item_2">
+              <a class="modal-catalog__link" href="#" aria-label="ссылка для перехода на страницу с новинками в разделе Щербеты">Щербеты</a>
+            </li>
+            <li class="modal-catalog__item  modal-catalog__item_3">
+              <a class="modal-catalog__link" href="#" aria-label="ссылка для перехода на страницу с новинками в разделе Фруктовый лед">Фруктовый лед</a>
+            </li>
+            <li class="modal-catalog__item  modal-catalog__item_4">
+              <a class="modal-catalog__link" href="#" aria-label="ссылка для перехода на страницу с новинками в разделе Мелорин">Мелорин</a>
+            </li>
+          </ul>
+        </section>
+        <section class="modal-search modal-search_hidden">
+          <h2 class="visually-hidden">Окно с формой поиска</h2>
+          <form class="form-search" action="https://echo.htmlacademy.ru" method="get" aria-label="форма поиска">
+            <input class="form-search__input" type="text" placeholder="Что ищем?" aria-label="поле ввода для поиска">
+          </form>
+        </section>
+        <section class="modal-user modal-user_hidden">
+          <h2 class="visually-hidden">Окно входа в личный кабинет</h2>
+          <form class="form-user" action="https://echo.htmlacademy.ru" method="post" aria-label="форма входа в личный кабинет">
+            <input class="form-user__input  form-user__input_email" type="email" placeholder="Электронная почта" aria-label="поле ввода вашей электронной почты">
+            <input class="form-user__input  form-user__input_password" type="password" placeholder="пароль" aria-label="поле ввода вашего пароля">
+            <div class="form-user__link-inner">
+              <div class="form-user__left-col">
+                <button class="form-user__btn btn btn__form-user" type="submit" aria-label="кнопка отправки ваших данных для входа в личный кабинет">Войти</button>
+              </div>
+              <div class="form-user__right-col">
+                <a class="form-user__link" href="#" aria-label="ссылка на страницу для восстановления пароля к личному кабинету">Забыли пароль?</a>
+                <a class="form-user__link" href="#" aria-label="ссылка на страницу для регистрации">Новая регистрация</a>
+              </div>
+            </div>
+          </form>
+        </section>
       </nav>
       <div class="work-schedule">
         <b class="work-schedule__time">
@@ -195,18 +234,18 @@
     </div>
     <section class="map">
       <h2 class="visually-hidden">Контакты и адрес нашего офиса</h2>
-      <p class="map__inner">
+      <div class="map__inner">
         <img class="map__static-map" width="1200" height="430" src="img/main-static-map.jpg" alt="Адрес нашего офиса: Санкт-Петербург, ул. Большая Конюшенная 19/8">
-      </p>
-      <div class="map__adress-inner">
-        <p class="map__adress-top-text">Адрес главного офиса<br>
-        и офлайн-магазина:</p>
-        <p class="map__adress-text">ул. Большая Конюшенная<br>
-        19/8, Санкт-Петербург</p>
-        <p class="map__adress-text-middle">Для заказов по телефону:</p>
-        <p class="map__adress-phone">8 812 450-25-25</p>
-        <p class="map__adress-text-bottom">(с 10 до 20 ежедневно)</p>
-        <a class="map__btn btn btn__map_open" href="#" aria-label="кнопка для открытия формы обратной связи">Форма обратной связи</a>
+        <div class="map__adress-inner">
+          <p class="map__adress-top-text">Адрес главного офиса<br>
+          и офлайн-магазина:</p>
+          <p class="map__adress-text">ул. Большая Конюшенная<br>
+          19/8, Санкт-Петербург</p>
+          <p class="map__adress-text-middle">Для заказов по телефону:</p>
+          <p class="map__adress-phone">8 812 450-25-25</p>
+          <p class="map__adress-text-bottom">(с 10 до 20 ежедневно)</p>
+          <a class="map__btn btn btn__map_open" href="#" aria-label="кнопка для открытия формы обратной связи">Форма обратной связи</a>
+        </div>
       </div>
     </section>
   </main>
@@ -273,46 +312,7 @@
       </section>
     </div>
   </footer>
-  <!-- <section class="modal-catalog modal-catalog_hidden">
-    <h2>Новинки</h2>
-    <ul class="modal-catalog__list">
-      <li class="modal-catalog__item  modal-catalog__item_1">
-        <a class="modal-catalog__link" href="catalog.html" aria-label="ссылка для перехода на страницу с новинками в разделе Сливочное">Сливочное</a>
-      </li>
-      <li class="modal-catalog__item  modal-catalog__item_2">
-        <a class="modal-catalog__link" href="#" aria-label="ссылка для перехода на страницу с новинками в разделе Щербеты">Щербеты</a>
-      </li>
-      <li class="modal-catalog__item  modal-catalog__item_3">
-        <a class="modal-catalog__link" href="#" aria-label="ссылка для перехода на страницу с новинками в разделе Фруктовый лед">Фруктовый лед</a>
-      </li>
-      <li class="modal-catalog__item  modal-catalog__item_4">
-        <a class="modal-catalog__link" href="#" aria-label="ссылка для перехода на страницу с новинками в разделе Мелорин">Мелорин</a>
-      </li>
-    </ul>
-  </section> -->
-  <!-- <section class="modal-user modal-user_hidden">
-    <h2 class="visually-hidden">Окно входа в личный кабинет</h2>
-    <form class="form-user" action="https://echo.htmlacademy.ru" method="post" aria-label="форма входа в личный кабинет">
-      <input class="form-user__input  form-user__input_email" type="email" placeholder="Электронная почта" aria-label="поле ввода вашей электронной почты">
-      <input class="form-user__input  form-user__input_password" type="password" placeholder="пароль" aria-label="поле ввода вашего пароля">
-      <div class="form-user__link-inner">
-        <div class="form-user__left-col">
-          <button class="form-user__btn btn btn__form-user" type="submit" aria-label="кнопка отправки ваших данных для входа в личный кабинет">Войти</button>
-        </div>
-        <div class="form-user__right-col">
-          <a class="form-user__link" href="#" aria-label="ссылка на страницу для восстановления пароля к личному кабинету">Забыли пароль?</a>
-          <a class="form-user__link" href="#" aria-label="ссылка на страницу для регистрации">Новая регистрация</a>
-        </div>
-      </div>
-    </form>
-  </section> -->
-  <!-- <section class="modal-search modal-search_hidden">
-    <h2 class="visually-hidden">Окно с формой поиска</h2>
-    <form class="form-search" action="https://echo.htmlacademy.ru" method="get" aria-label="форма поиска">
-      <input class="form-search__input" type="text" placeholder="Что ищем?" aria-label="поле ввода для поиска">
-    </form>
-  </section> -->
-  <!-- <section class="modal-callback modal-callback_hidden">
+  <section class="modal-callback modal-callback_hidden">
     <h2 class="visually-hidden">Обратная связь</h2>
     <b class="modal-callback__title">Мы обязательно вам ответим!</b>
     <button class="modal-callback__btn modal-callback__close-btn" type="button" aria-label="кнопка для закрытия окна обратной связи">
@@ -321,10 +321,10 @@
     <form class="form-callback" action="https://echo.htmlacademy.ru" method="GET" aria-label="форма для обратной связи">
       <input class="form-callback__input  form-callback__input_name" type="text" placeholder="Как вас зовут?" aria-label="поле для ввода вашего имени">
       <input class="form-callback__input  form-callback__input_email" type="text" placeholder="Ваша почта для ответа?" aria-label="поле для ввода вашей электронной почты">
-      <textarea class="form-callback__input  form-callback__input_area" cols="30" rows="10" placeholder="Напишите что-нибудь" aria-label="поле для ввода теуста вашего обращения"></textarea>
-      <button class="form-callback__btn form-callback__submit-btn" type="submit" aria-label="кнопка отправить ваше обращение">Отправить</button>
+      <textarea class="form-callback__input  form-callback__input_area" cols="1" rows="1" placeholder="Напишите что-нибудь" aria-label="поле для ввода теуста вашего обращения"></textarea>
+      <button class="form-callback__btn  btn  btn__form-callback-submit" type="submit" aria-label="кнопка отправить ваше обращение">Отправить</button>
     </form>
-  </section> -->
+  </section>
   <script src="js/script.js"></script>
   <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </body>
