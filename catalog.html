@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic">
 </head>
 <body>
-  <header class="page-header">
+  <header class="page-header page-header_catalog">
     <div class="container">
       <nav class="main-nav">
         <p class="logo">
@@ -90,237 +90,239 @@
     </div>
   </header>
   <main>
-    <section class="breadcrumps">
-      <h2 class="visually-hidden">Навигация по сайту</h2>
-      <ul class="breadcrumps__list">
-        <li class="breadcrumps__item  breadcrumps__item_1">
-          <a class="breadcrumps__link" href="index.html">Главная</a>
-        </li>
-        <li class="breadcrumps__item  breadcrumps__item_2">
-          <a class="breadcrumps__link" href="#">Каталог</a>
-        </li>
-        <li class="breadcrumps__item  breadcrumps__item_3">
-          <a class="breadcrumps__link" href="#">Сливочное</a>
-        </li>
-      </ul>
-    </section>
-    <h1 class="page-title">Сливочное мороженое</h1>
-    <form class="form-filter" action="https://echo.htmlacademy.ru" method="GET" aria-label="форма сортировки мороженого">
-      <fieldset class="form-filter__field">
-        <legend class="form-filter__field-title">Сортировка:</legend>
-        <a class="form-filter__option-link" href="#" aria-label="отсортировать по популярности">По популярности</a>
-      </fieldset>
-      <fieldset class="form-filter__field">
-        <legend class="form-filter__title">Цена:</legend>
-        <div class="price-range">
-          <div class="price-range__controls">
-            <div class="price-range__scale">
-              <div class="price-range__bar"></div>
+    <div class="container">
+      <section class="breadcrumps">
+        <h2 class="visually-hidden">Навигация по сайту</h2>
+        <ul class="breadcrumps__list">
+          <li class="breadcrumps__item  breadcrumps__item_1">
+            <a class="breadcrumps__link  breadcrumps__link_underline" href="index.html">Главная</a>
+          </li>
+          <li class="breadcrumps__item  breadcrumps__item_2">
+            <a class="breadcrumps__link  breadcrumps__link_underline" href="#">Каталог</a>
+          </li>
+          <li class="breadcrumps__item  breadcrumps__item_3">
+            <a class="breadcrumps__link" href="#">Сливочное</a>
+          </li>
+        </ul>
+      </section>
+      <h1 class="page-title">Сливочное мороженое</h1>
+      <form class="form-filter" action="https://echo.htmlacademy.ru" method="GET" aria-label="форма сортировки мороженого">
+        <fieldset class="form-filter__field">
+          <legend class="form-filter__field-title">Сортировка:</legend>
+          <a class="form-filter__option-link" href="#" aria-label="отсортировать по популярности">По популярности</a>
+        </fieldset>
+        <fieldset class="form-filter__field">
+          <legend class="form-filter__title">Цена:</legend>
+          <div class="price-range">
+            <div class="price-range__controls">
+              <div class="price-range__scale">
+                <div class="price-range__bar"></div>
+              </div>
+              <div class="price-range__toggle price-range__toggle-min" aria-label="индикатор минимальной цены"></div>
+              <div class="price-range__toggle price-range__toggle-max" aria-label="индикатор максимальной цены"></div>
             </div>
-            <div class="price-range__toggle price-range__toggle-min" aria-label="индикатор минимальной цены"></div>
-            <div class="price-range__toggle price-range__toggle-max" aria-label="индикатор максимальной цены"></div>
+            <div class="price-range__input-text">
+              <input name="price-range__input  price-range__input_min" type="text" placeholder="100" aria-label="поле для ввода минимальной цены">
+              <input name="price-range__input  price-range__input_max" type="text" placeholder="500" aria-label="поле для ввода максимальной цены">
+            </div>
           </div>
-          <div class="price-range__input-text">
-            <input name="price-range__input  price-range__input_min" type="text" placeholder="100" aria-label="поле для ввода минимальной цены">
-            <input name="price-range__input  price-range__input_max" type="text" placeholder="500" aria-label="поле для ввода максимальной цены">
-          </div>
+        </fieldset>
+        <fieldset class="form-filter__field">
+          <legend class="form-filter__title">Жирность:</legend>
+          <ul class="percent-fatness__list">
+            <li class="percent-fatness__item  percent-fatness__item_1">
+              <input class="visually-hidden  percent-fatness__input-radio" type="radio" name="fatness" value="percent0" id="percent0" aria-label="опция выбора мороженого с жирностью 0%">
+              <label class="percent-fatness__option" for="percent0">0%</label>
+            </li>
+            <li class="percent-fatness__item  percent-fatness__item_2">
+              <input class="visually-hidden  percent-fatness__input-radio" type="radio" name="fatness" value="percent10" id="percent10" aria-label="опция выбора мороженого с жирностью до 10%" checked>
+              <label class="percent-fatness__option" for="percent10">до 10%</label>
+            </li>
+            <li class="percent-fatness__item  percent-fatness__item_3">
+              <input class="visually-hidden  percent-fatness__input-radio" type="radio" name="fatness" value="percent30" id="percent30" aria-label="опция выбора мороженого с жирностью до 30%">
+              <label class="percent-fatness__option" for="percent30">до 30%</label>
+            </li>
+            <li class="percent-fatness__item  percent-fatness__item_4">
+              <input class="visually-hidden  percent-fatness__input-radio" type="radio" name="fatness" value="percent0" id="percent-over30" aria-label="опция выбора мороженого с жирностью более 30%">
+              <label class="percent-fatness__option" for="percent-over30">выше 30%</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="form-filter__field">
+          <legend class="form-filter__title">Наполнители:</legend>
+          <ul class="filler__list">
+            <li class="filler__item  filler__item_1">
+              <input class="visually-hidden  filler__input-checkbox" type="checkbox" id="chocolate" aria-label="опция для выбора мороженого с шоколадными наполнителями" name="chocolate" checked>
+              <label class="filler__option" for="chocolate">шоколадные</label>
+            </li>
+            <li class="filler__item  filler__item_2">
+              <input class="visually-hidden  filler__input-checkbox" type="checkbox" id="sugar-powder" aria-label="опция для выбора мороженого с сахарными присыпками" name="sugar-powder" checked>
+              <label class="filler__option" for="sugar-powder">сахарные присыпки</label>
+            </li>
+            <li class="filler__item  filler__item_3">
+              <input class="visually-hidden  filler__input-checkbox" type="checkbox" id="fruits" aria-label="опция для выбора мороженого с фруктовыми наполнителями" name="fruits">
+              <label class="filler__option" for="fruits">фрукты</label>
+            </li>
+            <li class="filler__item  filler__item_4">
+              <input class="visually-hidden  filler__input-checkbox" type="checkbox" id="syrups" aria-label="опция для выбора мороженого с сиропами" name="syrups">
+              <label class="filler__option" for="syrups">сиропы</label>
+            </li>
+            <li class="filler__item  filler__item_5">
+              <input class="visually-hidden  filler__input-checkbox" type="checkbox" id="jams" aria-label="опция для выбора мороженого с джемами" name="jams">
+              <label class="filler__option" for="jams">джемы</label>
+            </li>
+          </ul>
+        </fieldset>
+        <button class="form-filter__btn-submit" type="submit" aria-label="кнопка для применения опций сортировки">Применить</button>
+      </form>
+      <section class="result">
+        <h2 class="visually-hidden">Результат выбора</h2>
+        <ul class="result__list">
+          <li class="result__item  card card_card1">
+            <p class="card__inner">
+              <img class="card__img  card__img_1" width="267" height="267" src="img/gallery-1.jpg" alt="Фото мороженого: Сливочное с апельсиновым джемом и цитрусовой стружкой">
+            </p>
+            <b class="card__price">310 &#8381;<span>/кг</span></b>
+            <p class="card__desc  card__desc_1">
+              Сливочное с апельсиновым джемом и цитрусовой стружкой
+            </p>
+            <!-- <a class="card__btn  btn  btn__card-link  btn__card-link_hidden" href="#" aria-label="ссылка для перехода на страницу с информацией о товаре">Быстрый просмотр</a> -->
+          </li>
+          <li class="result__item  card card_card2">
+            <p class="card__inner">
+              <img class="card__img  card__img_2" width="267" height="267" src="img/gallery-2.jpg" alt="Фото мороженого: Сливочно-кофейное с кусочками шоколада">
+            </p>
+            <b class="card__price">380 &#8381;/кг</b>
+            <p class="card__desc  card__desc_2">
+            Сливочно-кофейное с кусочками шоколада
+            </p>
+            <!-- <a class="card__btn  btn  btn__card-link  btn__card-link_hidden" href="#" aria-label="ссылка для перехода на страницу с информацией о товаре">Быстрый просмотр</a> -->
+          </li>
+          <li class="result__item  card card_card3">
+            <p class="card__inner">
+              <img class="card__img  card__img_3" width="267" height="267" src="img/gallery-3.jpg" alt="Фото мороженого: Сливочно-клубничное с присыпкой из белого шоколада">
+            </p>
+            <b class="card__price">355 &#8381;/кг</b>
+            <p class="card__desc  card__desc_3">
+                Сливочно-клубничное с присыпкой из белого шоколада
+            </p>
+            <!-- <a class="card__btn  btn  btn__card-link  btn__card-link_hidden" href="#" aria-label="ссылка для перехода на страницу с информацией о товаре">Быстрый просмотр</a> -->
+          </li>
+          <li class="result__item  card card_card4">
+            <p class="card__inner">
+              <img class="card__img  card__img_card4" width="267" height="267" src="img/gallery-4.jpg" alt="Фото мороженого: Сливочное крем-брюле с карамельной подливкой">
+            </p>
+            <b class="card__price">415 &#8381;/кг</b>
+            <p class="card__desc  card__desc_4">
+            Сливочное крем-брюле с карамельной подливкой
+            </p>
+            <!-- <a class="card__btn  btn  btn__card-link  btn__card-link_hidden" href="#" aria-label="ссылка для перехода на страницу с информацией о товаре">Быстрый просмотр</a> -->
+          </li>
+          <li class="result__item  card card_card5">
+            <p class="card__inner">
+              <img class="card__img  card__img_5" width="267" height="267" src="img/gallery-5.jpg" alt="Фото мороженого: Сливочное с брусничным джемом">
+            </p>
+            <b class="card__price">325 &#8381;/кг</b>
+            <p class="card__desc  card__desc_5">
+            Сливочное с брусничным джемом</p>
+            <!-- <a class="card__btn  btn  btn__card-link  btn__card-link_hidden" href="#" aria-label="ссылка для перехода на страницу с информацией о товаре">Быстрый просмотр</a> -->
+          </li>
+          <li class="result__item  card card_card6">
+            <p class="card__inner">
+              <img class="card__img  card__img_6" width="267" height="267" src="img/gallery-6.jpg" alt="Фото мороженого: Сливочное-черничное с цельными ягодами черники">
+            </p>
+            <b class="card__price">410 &#8381;/кг</b>
+            <p class="card__desc  card__desc_6">
+            Сливочное-черничное с цельными ягодами черники</p>
+            <!-- <a class="card__btn  btn  btn__card-link  btn__card-link_hidden" href="#" aria-label="ссылка для перехода на страницу с информацией о товаре">Быстрый просмотр</a> -->
+          </li>
+          <li class="result__item  card card_card7">
+            <p class="card__inner">
+              <img class="card__img  card__img_7" width="267" height="267" src="img/gallery-7.jpg" alt="Фото мороженого: Сливочно-лимонное с карамельной присыпкой">
+            </p>
+            <b class="card__price">375 &#8381;/кг</b>
+            <p class="card__desc  card__desc_7">
+            Сливочно-лимонное с карамельной присыпкой</p>
+            <!-- <a class="card__btn  btn  btn__card-link  btn__card-link_hidden" href="#" aria-label="ссылка для перехода на страницу с информацией о товаре">Быстрый просмотр</a> -->
+          </li>
+          <li class="result__item  card card_card8">
+            <p class="card__inner">
+              <img class="card__img  card__img_8" width="267" height="267" src="img/gallery-8.jpg" alt="Фото мороженого: Сливочное с шоколадной стружкой">
+            </p>
+            <b class="card__price">320 &#8381;/кг</b>
+            <p class="card__desc  card__desc_8">
+            Сливочное с шоколадной стружкой
+            </p>
+            <!-- <a class="card__btn  btn  btn__card-link  btn__card-link_hidden" href="#" aria-label="ссылка для перехода на страницу с информацией о товаре">Быстрый просмотр</a> -->
+          </li>
+          <li class="result__item  card card_card9">
+            <p class="card__inner">
+              <img class="card__img  card__img_9" width="267" height="267" src="img/gallery-9.jpg" alt="Фото мороженого: Сливочно-ванильное с кусочками шоколада">
+            </p>
+            <b class="card__price">440 &#8381;/кг</b>
+            <p class="card__desc  card__desc_9">
+            Сливочно-ванильное с кусочками шоколада</p>
+            <!-- <a class="card__btn  btn  btn__card-link  btn__card-link_hidden" href="#" aria-label="ссылка для перехода на страницу с информацией о товаре">Быстрый просмотр</a> -->
+          </li>
+          <li class="result__item  card card_card10">
+            <p class="card__inner">
+              <img class="card__img  card__img_10" width="267" height="267" src="img/gallery-10.jpg" alt="Фото мороженого: Сливочное с ментоловым сиропом">
+            </p>
+            <b class="card__price">435 &#8381;/кг</b>
+            <p class="card__desc  card__desc_10">
+            Сливочное с ментоловым сиропом</p>
+            <!-- <a class="card__btn  btn  btn__card-link  btn__card-link_hidden" href="#" aria-label="ссылка для перехода на страницу с информацией о товаре">Быстрый просмотр</a> -->
+          </li>
+          <li class="result__item  card card_card11">
+            <p class="card__inner">
+              <img class="card__img  card__img_11" width="267" height="267" src="img/gallery-11.jpg" alt="Фото мороженого: Сливочное с кусочками черного шоколада">
+            </p>
+            <b class="card__price">355 &#8381;/кг</b>
+            <p class="card__desc  card__desc_11">
+            Сливочное с кусочками черного шоколада</p>
+            <!-- <a class="card__btn  btn  btn__card-link  btn__card-link_hidden" href="#" aria-label="ссылка для перехода на страницу с информацией о товаре">Быстрый просмотр</a> -->
+          </li>
+          <li class="result__item  card card_card12">
+            <p class="card__inner">
+              <img class="card__img  card__img_12" width="267" height="267" src="img/gallery-12.jpg" alt="Фото мороженого: Сливочное с мятным сиропом">
+            </p>
+            <b class="card__price">420 &#8381;/кг</b>
+            <p class="card__desc  card__desc_12">
+            Сливочное с мятным сиропом</p>
+            <!-- <a class="card__btn  btn  btn__card-link  btn__card-link_hidden" href="#" aria-label="ссылка для перехода на страницу с информацией о товаре">Быстрый просмотр</a> -->
+          </li>
+        </ul>
+        <div class="pagination">
+          <ul class="pagination__list">
+            <li class="pagination__item">
+              <a class="pagination__link  pagination__link_prev" href="#" aria-label="ссылка для перехода на предыдущую страницу">
+                <span class="visually-hidden">prev</span>
+              </a>
+            </li>
+            <li class="pagination__item">
+              <a class="pagination__link  pagination__link_active" href="#" aria-label="активная страница">1</a>
+            </li>
+            <li class="pagination__item">
+              <a class="pagination__link" href="#" aria-label="ссылка для перехода на страницу 2">2</a>
+            </li>
+            <li class="pagination__item">
+              <a class="pagination__link" href="#" aria-label="ссылка для перехода на страницу 3">3</a>
+            </li>
+            <li class="pagination__item">
+              <a class="pagination__link" href="#" aria-label="ссылка для перехода на страницу 4">4</a>
+            </li>
+            <li class="pagination__item">
+              <a class="pagination__link" href="#" aria-label="ссылка для перехода на страницу 5">5</a>
+            </li>
+            <li class="pagination__item">
+              <a class="pagination__link  pagination__link_next" href="#" aria-label="ссылка для перехода на следующую страницу">
+                <span class="visually-hidden">next</span>
+              </a>
+            </li>
+          </ul>
         </div>
-      </fieldset>
-      <fieldset class="form-filter__field">
-        <legend class="form-filter__title">Жирность:</legend>
-        <ul class="percent-fatness__list">
-          <li class="percent-fatness__item  percent-fatness__item_1">
-            <input class="visually-hidden  percent-fatness__input-radio" type="radio" name="fatness" value="percent0" id="percent0" aria-label="опция выбора мороженого с жирностью 0%">
-            <label class="percent-fatness__option" for="percent0">0%</label>
-          </li>
-          <li class="percent-fatness__item  percent-fatness__item_2">
-            <input class="visually-hidden  percent-fatness__input-radio" type="radio" name="fatness" value="percent10" id="percent10" aria-label="опция выбора мороженого с жирностью до 10%" checked>
-            <label class="percent-fatness__option" for="percent10">до 10%</label>
-          </li>
-          <li class="percent-fatness__item  percent-fatness__item_3">
-            <input class="visually-hidden  percent-fatness__input-radio" type="radio" name="fatness" value="percent30" id="percent30" aria-label="опция выбора мороженого с жирностью до 30%">
-            <label class="percent-fatness__option" for="percent30">до 30%</label>
-          </li>
-          <li class="percent-fatness__item  percent-fatness__item_4">
-            <input class="visually-hidden  percent-fatness__input-radio" type="radio" name="fatness" value="percent0" id="percent-over30" aria-label="опция выбора мороженого с жирностью более 30%">
-            <label class="percent-fatness__option" for="percent-over30">выше 30%</label>
-          </li>
-        </ul>
-      </fieldset>
-      <fieldset class="form-filter__field">
-        <legend class="form-filter__title">Наполнители:</legend>
-        <ul class="filler__list">
-          <li class="filler__item  filler__item_1">
-            <input class="visually-hidden  filler__input-checkbox" type="checkbox" id="chocolate" aria-label="опция для выбора мороженого с шоколадными наполнителями" name="chocolate" checked>
-            <label class="filler__option" for="chocolate">шоколадные</label>
-          </li>
-          <li class="filler__item  filler__item_2">
-            <input class="visually-hidden  filler__input-checkbox" type="checkbox" id="sugar-powder" aria-label="опция для выбора мороженого с сахарными присыпками" name="sugar-powder" checked>
-            <label class="filler__option" for="sugar-powder">сахарные присыпки</label>
-          </li>
-          <li class="filler__item  filler__item_3">
-            <input class="visually-hidden  filler__input-checkbox" type="checkbox" id="fruits" aria-label="опция для выбора мороженого с фруктовыми наполнителями" name="fruits">
-            <label class="filler__option" for="fruits">фрукты</label>
-          </li>
-          <li class="filler__item  filler__item_4">
-            <input class="visually-hidden  filler__input-checkbox" type="checkbox" id="syrups" aria-label="опция для выбора мороженого с сиропами" name="syrups">
-            <label class="filler__option" for="syrups">сиропы</label>
-          </li>
-          <li class="filler__item  filler__item_5">
-            <input class="visually-hidden  filler__input-checkbox" type="checkbox" id="jams" aria-label="опция для выбора мороженого с джемами" name="jams">
-            <label class="filler__option" for="jams">джемы</label>
-          </li>
-        </ul>
-      </fieldset>
-      <button class="form-filter__btn-submit" type="submit" aria-label="кнопка для применения опций сортировки">Применить</button>
-    </form>
-    <section class="result">
-      <h2 class="visually-hidden">Результат выбора</h2>
-      <ul class="result__list">
-        <li class="result__item  card card_card1">
-          <p class="card__inner">
-            <img class="card__img  card__img_1" width="267" height="267" src="img/gallery-1.jpg" alt="Фото мороженого: Сливочное с апельсиновым джемом и цитрусовой стружкой">
-          </p>
-          <b class="card__price">310 &#8381;<span>/кг</span></b>
-          <p class="card__desc  card__desc_1">
-            Сливочное с апельсиновым джемом и цитрусовой стружкой
-          </p>
-          <!-- <a class="card__btn  btn  btn__card-link  btn__card-link_hidden" href="#" aria-label="ссылка для перехода на страницу с информацией о товаре">Быстрый просмотр</a> -->
-        </li>
-        <li class="result__item  card card_card2">
-          <p class="card__inner">
-            <img class="card__img  card__img_2" width="267" height="267" src="img/gallery-2.jpg" alt="Фото мороженого: Сливочно-кофейное с кусочками шоколада">
-          </p>
-          <b class="card__price">380 &#8381;/кг</b>
-          <p class="card__desc  card__desc_2">
-          Сливочно-кофейное с кусочками шоколада
-          </p>
-          <!-- <a class="card__btn  btn  btn__card-link  btn__card-link_hidden" href="#" aria-label="ссылка для перехода на страницу с информацией о товаре">Быстрый просмотр</a> -->
-        </li>
-        <li class="result__item  card card_card3">
-          <p class="card__inner">
-            <img class="card__img  card__img_3" width="267" height="267" src="img/gallery-3.jpg" alt="Фото мороженого: Сливочно-клубничное с присыпкой из белого шоколада">
-          </p>
-          <b class="card__price">355 &#8381;/кг</b>
-          <p class="card__desc  card__desc_3">
-              Сливочно-клубничное с присыпкой из белого шоколада
-          </p>
-          <!-- <a class="card__btn  btn  btn__card-link  btn__card-link_hidden" href="#" aria-label="ссылка для перехода на страницу с информацией о товаре">Быстрый просмотр</a> -->
-        </li>
-        <li class="result__item  card card_card4">
-          <p class="card__inner">
-            <img class="card__img  card__img_card4" width="267" height="267" src="img/gallery-4.jpg" alt="Фото мороженого: Сливочное крем-брюле с карамельной подливкой">
-          </p>
-          <b class="card__price">415 &#8381;/кг</b>
-          <p class="card__desc  card__desc_4">
-          Сливочное крем-брюле с карамельной подливкой
-          </p>
-          <!-- <a class="card__btn  btn  btn__card-link  btn__card-link_hidden" href="#" aria-label="ссылка для перехода на страницу с информацией о товаре">Быстрый просмотр</a> -->
-        </li>
-        <li class="result__item  card card_card5">
-          <p class="card__inner">
-            <img class="card__img  card__img_5" width="267" height="267" src="img/gallery-5.jpg" alt="Фото мороженого: Сливочное с брусничным джемом">
-          </p>
-          <b class="card__price">325 &#8381;/кг</b>
-          <p class="card__desc  card__desc_5">
-          Сливочное с брусничным джемом</p>
-          <!-- <a class="card__btn  btn  btn__card-link  btn__card-link_hidden" href="#" aria-label="ссылка для перехода на страницу с информацией о товаре">Быстрый просмотр</a> -->
-        </li>
-        <li class="result__item  card card_card6">
-          <p class="card__inner">
-            <img class="card__img  card__img_6" width="267" height="267" src="img/gallery-6.jpg" alt="Фото мороженого: Сливочное-черничное с цельными ягодами черники">
-          </p>
-          <b class="card__price">410 &#8381;/кг</b>
-          <p class="card__desc  card__desc_6">
-          Сливочное-черничное с цельными ягодами черники</p>
-          <!-- <a class="card__btn  btn  btn__card-link  btn__card-link_hidden" href="#" aria-label="ссылка для перехода на страницу с информацией о товаре">Быстрый просмотр</a> -->
-        </li>
-        <li class="result__item  card card_card7">
-          <p class="card__inner">
-            <img class="card__img  card__img_7" width="267" height="267" src="img/gallery-7.jpg" alt="Фото мороженого: Сливочно-лимонное с карамельной присыпкой">
-          </p>
-          <b class="card__price">375 &#8381;/кг</b>
-          <p class="card__desc  card__desc_7">
-          Сливочно-лимонное с карамельной присыпкой</p>
-          <!-- <a class="card__btn  btn  btn__card-link  btn__card-link_hidden" href="#" aria-label="ссылка для перехода на страницу с информацией о товаре">Быстрый просмотр</a> -->
-        </li>
-        <li class="result__item  card card_card8">
-          <p class="card__inner">
-            <img class="card__img  card__img_8" width="267" height="267" src="img/gallery-8.jpg" alt="Фото мороженого: Сливочное с шоколадной стружкой">
-          </p>
-          <b class="card__price">320 &#8381;/кг</b>
-          <p class="card__desc  card__desc_8">
-          Сливочное с шоколадной стружкой
-          </p>
-          <!-- <a class="card__btn  btn  btn__card-link  btn__card-link_hidden" href="#" aria-label="ссылка для перехода на страницу с информацией о товаре">Быстрый просмотр</a> -->
-        </li>
-        <li class="result__item  card card_card9">
-          <p class="card__inner">
-            <img class="card__img  card__img_9" width="267" height="267" src="img/gallery-9.jpg" alt="Фото мороженого: Сливочно-ванильное с кусочками шоколада">
-          </p>
-          <b class="card__price">440 &#8381;/кг</b>
-          <p class="card__desc  card__desc_9">
-          Сливочно-ванильное с кусочками шоколада</p>
-          <!-- <a class="card__btn  btn  btn__card-link  btn__card-link_hidden" href="#" aria-label="ссылка для перехода на страницу с информацией о товаре">Быстрый просмотр</a> -->
-        </li>
-        <li class="result__item  card card_card10">
-          <p class="card__inner">
-            <img class="card__img  card__img_10" width="267" height="267" src="img/gallery-10.jpg" alt="Фото мороженого: Сливочное с ментоловым сиропом">
-          </p>
-          <b class="card__price">435 &#8381;/кг</b>
-          <p class="card__desc  card__desc_10">
-          Сливочное с ментоловым сиропом</p>
-          <!-- <a class="card__btn  btn  btn__card-link  btn__card-link_hidden" href="#" aria-label="ссылка для перехода на страницу с информацией о товаре">Быстрый просмотр</a> -->
-        </li>
-        <li class="result__item  card card_card11">
-          <p class="card__inner">
-            <img class="card__img  card__img_11" width="267" height="267" src="img/gallery-11.jpg" alt="Фото мороженого: Сливочное с кусочками черного шоколада">
-          </p>
-          <b class="card__price">355 &#8381;/кг</b>
-          <p class="card__desc  card__desc_11">
-          Сливочное с кусочками черного шоколада</p>
-          <!-- <a class="card__btn  btn  btn__card-link  btn__card-link_hidden" href="#" aria-label="ссылка для перехода на страницу с информацией о товаре">Быстрый просмотр</a> -->
-        </li>
-        <li class="result__item  card card_card12">
-          <p class="card__inner">
-            <img class="card__img  card__img_12" width="267" height="267" src="img/gallery-12.jpg" alt="Фото мороженого: Сливочное с мятным сиропом">
-          </p>
-          <b class="card__price">420 &#8381;/кг</b>
-          <p class="card__desc  card__desc_12">
-          Сливочное с мятным сиропом</p>
-          <!-- <a class="card__btn  btn  btn__card-link  btn__card-link_hidden" href="#" aria-label="ссылка для перехода на страницу с информацией о товаре">Быстрый просмотр</a> -->
-        </li>
-      </ul>
-      <div class="pagination">
-        <ul class="pagination__list">
-          <li class="pagination__item">
-            <a class="pagination__link  pagination__link_prev" href="#" aria-label="ссылка для перехода на предыдущую страницу">
-              <span class="visually-hidden">prev</span>
-            </a>
-          </li>
-          <li class="pagination__item">
-            <a class="pagination__link  pagination__link_active" href="#" aria-label="активная страница">1</a>
-          </li>
-          <li class="pagination__item">
-            <a class="pagination__link" href="#" aria-label="ссылка для перехода на страницу 2">2</a>
-          </li>
-          <li class="pagination__item">
-            <a class="pagination__link" href="#" aria-label="ссылка для перехода на страницу 3">3</a>
-          </li>
-          <li class="pagination__item">
-            <a class="pagination__link" href="#" aria-label="ссылка для перехода на страницу 4">4</a>
-          </li>
-          <li class="pagination__item">
-            <a class="pagination__link" href="#" aria-label="ссылка для перехода на страницу 5">5</a>
-          </li>
-          <li class="pagination__item">
-            <a class="pagination__link  pagination__link_next" href="#" aria-label="ссылка для перехода на следующую страницу">
-              <span class="visually-hidden">next</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </section>
+      </section>
+    </div>
   </main>
   <footer class="main-footer">
     <div class="container">
