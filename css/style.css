@@ -371,8 +371,10 @@ input[type="radio"].visually-hidden {
   margin-right: 0;
 }
 .slider__controls-toggle {
+  display: block;
   width: 20px;
   height: 20px;
+  box-sizing: border-box;
   cursor: pointer;
   border: 2px solid #ffffff;
   border-radius: 50%;
