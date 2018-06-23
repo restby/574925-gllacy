@@ -1576,10 +1576,117 @@ outline: none;
 .form-filter__title {
   font-family: "Roboto", Arial, sans-serif;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 16px;
   color: #ffffff;
+  margin-bottom: 7px;
 }
+.form-filter__field_sort {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  width: 193px;
+  margin-right: 15px;
+}
+
+.form-filter__option-link {
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  display: block;
+  color: #ffffff;
+  background-color: #aabcb2;
+  box-sizing: border-box;
+  border-radius: 20px;
+  padding-top: 9px;
+  padding-left: 15px;
+  padding-bottom: 9px;
+  padding-right: 50px;
+}
+.form-filter__field_range {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  width: 218px;
+  margin-right: 15px;
+}
+.form-filter__field_fatness {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  width: 414px;
+  margin-right: 289px;
+}
+.percent-fatness__list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  align-items: flex-start;
+}
+
+
+
+
+
+
+.form-filter__field_filler {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  width: 702px;
+  margin-right: 14px;
+}
+.filler__list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  align-items: flex-start;
+}
+
+
+
+
+
+
+.form-filter__btn-submit {
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 20px;
+  width: 143px;
+  text-align: center;
+  background-color: #aabcb2;
+  box-sizing: border-box;
+  padding: 9px 28px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
