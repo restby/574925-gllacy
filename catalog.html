@@ -37,7 +37,7 @@
             <a class="user__link  user__link_btn-account" href="#" aria-label="кнопка для открытия окна с формой входа в личный кабинет"><svg class="user__link_icon-account" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="19" viewBox="0 0 21 19" fill="#ffffff"><g><path d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z"/><path d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z"/></g></svg>Вход</a>
           </li>
           <li class="user__item user__item_btn-cart user__item_btn-red-cart">
-            <a class="user__link  user__link_btn-cart" href="#" aria-label="ссылка для перехода на страницу корзины"><svg class="user__link_icon-cart" xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20"><path fill="#E84D37" d="M5.888 4.031L6.922 13h10.45l1.176-8.969z"/><circle fill="#343434" cx="6.984" cy="18" r="2"/><circle fill="#343434" cx="15.984" cy="18" r="2"/><path fill="#343434" d="M5.657 2.031L5.422 0H0v2h3.64l1.5 13h13.988l1.699-12.969H5.657zM17.372 13H6.922L5.888 4.031h12.66L17.372 13z"/></svg>2 товара</a>
+            <a class="user__link  user__link_catalog  user__link_btn-cart" href="#" aria-label="ссылка для перехода на страницу корзины"><svg class="user__link_icon-cart" xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20"><path fill="#E84D37" d="M5.888 4.031L6.922 13h10.45l1.176-8.969z"/><circle fill="#343434" cx="6.984" cy="18" r="2"/><circle fill="#343434" cx="15.984" cy="18" r="2"/><path fill="#343434" d="M5.657 2.031L5.422 0H0v2h3.64l1.5 13h13.988l1.699-12.969H5.657zM17.372 13H6.922L5.888 4.031h12.66L17.372 13z"/></svg>2 товара</a>
           </li>
         </ul>
         <section class="modal-catalog">
@@ -111,10 +111,28 @@
       <form class="form-filter" action="https://echo.htmlacademy.ru" method="GET" aria-label="форма сортировки мороженого">
         <fieldset class="form-filter__field  form-filter__field_sort">
           <legend class="form-filter__title">Сортировка:</legend>
-          <a class="form-filter__option-link" href="#" aria-label="отсортировать по популярности">по популярности</a>
+          <p class="form-filter__inner">
+            <a class="form-filter__option-link" href="#" aria-label="отсортировать по популярности">по популярности</a>
+          </p>
+          <div class="modal-filter">
+            <ul class="modal-filter__list">
+              <li class="modal-filter__item  modal-filter__item_1  modal-filter__item_active">
+                <a class="modal-filter__option-link" href="#" aria-label="кнопка отсортировать по популярности">по популярности</a>
+              </li>
+              <li class="modal-filter__item  modal-filter__item_2">
+                <a class="modal-filter__option-link" href="#" aria-label="кнопка отсортировать по возрастанию цены">сначала недорогие</a>
+              </li>
+              <li class="modal-filter__item  modal-filter__item_3">
+                <a class="modal-filter__option-link" href="#" aria-label="кнопка отсортировать по убыванию цены">сначала дорогие</a>
+              </li>
+              <li class="modal-filter__item  modal-filter__item_4">
+                <a class="modal-filter__option-link" href="#" aria-label="кнопка отсортировать по проценту жирности">по жирности</a>
+              </li>
+            </ul>
+          </div>
         </fieldset>
         <fieldset class="form-filter__field  form-filter__field_range">
-          <legend class="form-filter__title">Цена:</legend>
+          <legend class="form-filter__title">Цена: 100 руб. - 500 руб.</legend>
           <div class="price-range">
             <div class="price-range__controls">
               <div class="price-range__scale">
@@ -122,10 +140,6 @@
               </div>
               <div class="price-range__toggle price-range__toggle-min" aria-label="индикатор минимальной цены"></div>
               <div class="price-range__toggle price-range__toggle-max" aria-label="индикатор максимальной цены"></div>
-            </div>
-            <div class="price-range__input-text">
-              <input name="price-range__input  price-range__input_min" type="text" placeholder="100" aria-label="поле для ввода минимальной цены">
-              <input name="price-range__input  price-range__input_max" type="text" placeholder="500" aria-label="поле для ввода максимальной цены">
             </div>
           </div>
         </fieldset>
@@ -180,7 +194,7 @@
       <section class="result">
         <h2 class="visually-hidden">Результат выбора</h2>
         <ul class="result__list">
-          <li class="result__item  card card_card1">
+          <li class="result__item  card  card_card1  card_catalog-card1">
             <p class="card__inner">
               <img class="card__img  card__img_1" width="267" height="267" src="img/gallery-1.jpg" alt="Фото мороженого: Сливочное с апельсиновым джемом и цитрусовой стружкой">
             </p>
@@ -192,7 +206,7 @@
               <a class="card__btn  btn  btn__card-link  btn__card-link_hidden" href="#" aria-label="ссылка для перехода на страницу с информацией о товаре">Быстрый просмотр</a>
             </div>
           </li>
-          <li class="result__item  card card_card2">
+          <li class="result__item  card  card_card2  card_catalog-card2">
             <p class="card__inner">
               <img class="card__img  card__img_2" width="267" height="267" src="img/gallery-2.jpg" alt="Фото мороженого: Сливочно-кофейное с кусочками шоколада">
             </p>
@@ -204,7 +218,7 @@
               <a class="card__btn  btn  btn__card-link  btn__card-link_hidden" href="#" aria-label="ссылка для перехода на страницу с информацией о товаре">Быстрый просмотр</a>
             </div>
           </li>
-          <li class="result__item  card card_card3">
+          <li class="result__item  card  card_card3  card_catalog-card3">
             <p class="card__inner">
               <img class="card__img  card__img_3" width="267" height="267" src="img/gallery-3.jpg" alt="Фото мороженого: Сливочно-клубничное с присыпкой из белого шоколада">
             </p>
@@ -216,7 +230,7 @@
               <a class="card__btn  btn  btn__card-link  btn__card-link_hidden" href="#" aria-label="ссылка для перехода на страницу с информацией о товаре">Быстрый просмотр</a>
             </div>
           </li>
-          <li class="result__item  card card_card4">
+          <li class="result__item  card  card_card4  card_catalog-card4">
             <p class="card__inner">
               <img class="card__img  card__img_card4" width="267" height="267" src="img/gallery-4.jpg" alt="Фото мороженого: Сливочное крем-брюле с карамельной подливкой">
             </p>
@@ -228,18 +242,19 @@
               <a class="card__btn  btn  btn__card-link  btn__card-link_hidden" href="#" aria-label="ссылка для перехода на страницу с информацией о товаре">Быстрый просмотр</a>
             </div>
           </li>
-          <li class="result__item  card card_card5">
+          <li class="result__item  card  card_card5  card_catalog-card5">
             <p class="card__inner">
               <img class="card__img  card__img_5" width="267" height="267" src="img/gallery-5.jpg" alt="Фото мороженого: Сливочное с брусничным джемом">
             </p>
             <b class="card__price">325 &#8381;/кг</b>
             <p class="card__desc  card__desc_5">
-            Сливочное с брусничным джемом</p>
+            Сливочное с брусничным<br>
+            джемом</p>
             <div class="card__hidden-info">
               <a class="card__btn  btn  btn__card-link  btn__card-link_hidden" href="#" aria-label="ссылка для перехода на страницу с информацией о товаре">Быстрый просмотр</a>
             </div>
           </li>
-          <li class="result__item  card card_card6">
+          <li class="result__item  card  card_card6  card_catalog-card6">
             <p class="card__inner">
               <img class="card__img  card__img_6" width="267" height="267" src="img/gallery-6.jpg" alt="Фото мороженого: Сливочное-черничное с цельными ягодами черники">
             </p>
@@ -250,7 +265,7 @@
               <a class="card__btn  btn  btn__card-link  btn__card-link_hidden" href="#" aria-label="ссылка для перехода на страницу с информацией о товаре">Быстрый просмотр</a>
             </div>
           </li>
-          <li class="result__item  card card_card7">
+          <li class="result__item  card  card_card7  card_catalog-card7">
             <p class="card__inner">
               <img class="card__img  card__img_7" width="267" height="267" src="img/gallery-7.jpg" alt="Фото мороженого: Сливочно-лимонное с карамельной присыпкой">
             </p>
@@ -261,7 +276,7 @@
               <a class="card__btn  btn  btn__card-link  btn__card-link_hidden" href="#" aria-label="ссылка для перехода на страницу с информацией о товаре">Быстрый просмотр</a>
             </div>
           </li>
-          <li class="result__item  card card_card8">
+          <li class="result__item  card  card_card8  card_catalog-card8">
             <p class="card__inner">
               <img class="card__img  card__img_8" width="267" height="267" src="img/gallery-8.jpg" alt="Фото мороженого: Сливочное с шоколадной стружкой">
             </p>
@@ -273,29 +288,31 @@
               <a class="card__btn  btn  btn__card-link  btn__card-link_hidden" href="#" aria-label="ссылка для перехода на страницу с информацией о товаре">Быстрый просмотр</a>
             </div>
           </li>
-          <li class="result__item  card card_card9">
+          <li class="result__item  card  card_card9  card_catalog-card9">
             <p class="card__inner">
               <img class="card__img  card__img_9" width="267" height="267" src="img/gallery-9.jpg" alt="Фото мороженого: Сливочно-ванильное с кусочками шоколада">
             </p>
             <b class="card__price">440 &#8381;/кг</b>
             <p class="card__desc  card__desc_9">
-            Сливочно-ванильное с кусочками шоколада</p>
+            Сливочно-ванильное с<br>
+            кусочками шоколада</p>
             <div class="card__hidden-info">
               <a class="card__btn  btn  btn__card-link  btn__card-link_hidden" href="#" aria-label="ссылка для перехода на страницу с информацией о товаре">Быстрый просмотр</a>
             </div>
           </li>
-          <li class="result__item  card card_card10">
+          <li class="result__item  card  card_card10  card_catalog-card10">
             <p class="card__inner">
               <img class="card__img  card__img_10" width="267" height="267" src="img/gallery-10.jpg" alt="Фото мороженого: Сливочное с ментоловым сиропом">
             </p>
             <b class="card__price">435 &#8381;/кг</b>
             <p class="card__desc  card__desc_10">
-            Сливочное с ментоловым сиропом</p>
+            Сливочное с ментоловым<br>
+            сиропом</p>
             <div class="card__hidden-info">
               <a class="card__btn  btn  btn__card-link  btn__card-link_hidden" href="#" aria-label="ссылка для перехода на страницу с информацией о товаре">Быстрый просмотр</a>
             </div>
           </li>
-          <li class="result__item  card card_card11">
+          <li class="result__item  card  card_card11  card_catalog-card11">
             <p class="card__inner">
               <img class="card__img  card__img_11" width="267" height="267" src="img/gallery-11.jpg" alt="Фото мороженого: Сливочное с кусочками черного шоколада">
             </p>
@@ -306,7 +323,7 @@
               <a class="card__btn  btn  btn__card-link  btn__card-link_hidden" href="#" aria-label="ссылка для перехода на страницу с информацией о товаре">Быстрый просмотр</a>
             </div>
           </li>
-          <li class="result__item  card card_card12">
+          <li class="result__item  card  card_card12  card_catalog-card12">
             <p class="card__inner">
               <img class="card__img  card__img_12" width="267" height="267" src="img/gallery-12.jpg" alt="Фото мороженого: Сливочное с мятным сиропом">
             </p>
@@ -320,27 +337,27 @@
         </ul>
         <div class="pagination">
           <ul class="pagination__list">
-            <li class="pagination__item">
+            <li class="pagination__item  pagination__item_prev">
               <a class="pagination__link  pagination__link_prev" href="#" aria-label="ссылка для перехода на предыдущую страницу">
                 <span class="visually-hidden">prev</span>
               </a>
             </li>
-            <li class="pagination__item">
+            <li class="pagination__item  pagination__item_1">
               <a class="pagination__link  pagination__link_active" href="#" aria-label="активная страница">1</a>
             </li>
-            <li class="pagination__item">
+            <li class="pagination__item  pagination__item_2">
               <a class="pagination__link" href="#" aria-label="ссылка для перехода на страницу 2">2</a>
             </li>
-            <li class="pagination__item">
+            <li class="pagination__item  pagination__item_3">
               <a class="pagination__link" href="#" aria-label="ссылка для перехода на страницу 3">3</a>
             </li>
-            <li class="pagination__item">
+            <li class="pagination__item  pagination__item_4">
               <a class="pagination__link" href="#" aria-label="ссылка для перехода на страницу 4">4</a>
             </li>
-            <li class="pagination__item">
+            <li class="pagination__item  pagination__item_5">
               <a class="pagination__link" href="#" aria-label="ссылка для перехода на страницу 5">5</a>
             </li>
-            <li class="pagination__item">
+            <li class="pagination__item  pagination__item_next">
               <a class="pagination__link  pagination__link_next" href="#" aria-label="ссылка для перехода на следующую страницу">
                 <span class="visually-hidden">next</span>
               </a>
@@ -428,51 +445,39 @@
       </section>
     </div>
   </footer>
-  <!-- <div class="modal-filter">
-    <ul class="modal-filter__list">
-      <li class="modal-filter__item  modal-filter__item_1">
-        <a class="modal-filter__option-link  modal-filter__option-link_active" href="#" aria-label="кнопка отсортировать по популярности">по популярности</a>
-      </li>
-      <li class="modal-filter__item  modal-filter__item_2">
-        <a class="modal-filter__option-link" href="#" aria-label="кнопка отсортировать по возрастанию цены">сначала недорогие</a>
-      </li>
-      <li class="modal-filter__item  modal-filter__item_3">
-        <a class="modal-filter__option-link" href="#" aria-label="кнопка отсортировать по убыванию цены">сначала дорогие</a>
-      </li>
-      <li class="modal-filter__item  modal-filter__item_4">
-        <a class="modal-filter__option-link" href="#" aria-label="кнопка отсортировать по проценту жирности">по жирности</a>
-      </li>
-    </ul>
-  </div> -->
-  <!-- <section class="modal-cart">
+  <section class="modal-cart">
     <h2 class="visually-hidden">Корзина заказов</h2>
     <ul class="modal-cart__list">
-      <li class="modal-cart__item">
-        <button class="modal-cart__btn-del" aria-label="кнопка удалить из корзины"><span class="visually-hidden">удалить</span></button>
-        <table>
-          <tr>
-            <td><img class="modal-cart__img" src="#" alt=""></td>
-            <td>Пломбир с апельсиновым джемом</td>
-            <td> 1,5 кг х <span>200 руб.</span></td>
-            <td>300 руб.</td>
+      <li class="modal-cart__item  modal-cart__item_1">
+        <button class="modal-cart__btn-del  modal-cart__btn-del1" aria-label="кнопка удалить из корзины"><span class="visually-hidden">удалить</span></button>
+        <table class="cart-table">
+          <tr class="cart-table__row">
+            <td class="cart-table__col">
+              <img class="cart-table__img  cart-table__img_1" width="33" height="33" src="img/gallery-1.jpg" alt="">
+            </td>
+            <td class="cart-table__col  cart-table__col_desc">Пломбир с апельсиновым джемом</td>
+            <td class="cart-table__col  cart-table__col_price"> 1,5 кг х <span>200 руб.</span></td>
+            <td class="cart-table__col  cart-table__col_sum">300 руб.</td>
           </tr>
         </table>
       </li>
-      <li class="modal-cart__item">
-        <button class="modal-cart__btn-del" aria-label="кнопка удалить из корзины"><span class="visually-hidden">удалить</span></button>
-        <table>
-          <tr>
-            <td><img class="modal-cart__img" src="#" alt=""></td>
-            <td>Клубничный пломбир с присыпкой из белого шоколада</td>
-            <td> 1,5 кг х <span>300 руб.</span></td>
-            <td>450 руб.</td>
+      <li class="modal-cart__item  modal-cart__item_2">
+        <button class="modal-cart__btn-del  modal-cart__btn-del2" aria-label="кнопка удалить из корзины"><span class="visually-hidden">удалить</span></button>
+        <table class="cart-table">
+          <tr class="cart-table__row">
+            <td class="cart-table__col">
+              <img class="cart-table__img  cart-table__img_2" width="33" height="33" src="img/gallery-3.jpg" alt="">
+            </td>
+            <td class="cart-table__col  cart-table__col_desc">Клубничный пломбир с присыпкой из белого шоколада</td>
+            <td class="cart-table__col  cart-table__col_price"> 1,5 кг х <span>300 руб.</span></td>
+            <td class="cart-table__col  cart-table__col_sum">450 руб.</td>
           </tr>
         </table>
       </li>
     </ul>
     <b class="modal-cart__text">Итого: 750 руб.</b>
     <button class="modal-cart__btn btn btn__modal-cart_submit" aria-label="ссылка для перехода на страницу с оформлением заказа">Оформить заказ</button>
-  </section> -->
+  </section>
   <script src="js/script.min.js"></script>
   <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </body>
