@@ -8,7 +8,6 @@ body {
   margin: 0 auto;
   padding: 0;
   color: #ffffff;
-  background-color: #849d8f;
 }
 a {
   text-decoration: none;
@@ -40,10 +39,27 @@ input[type="radio"].visually-hidden {
   box-shadow: 0 2px 2px 0 rgba(172, 16, 0, 0.64);
 }
 /*gloabal*/
-.index {
+.index_bg-1 {
   background-image: url(../img/header-slide-1.png);
   background-repeat: no-repeat;
   background-position: 50% 0;
+  background-color: #849d8f;
+}
+.index_bg-2 {
+  background-image: url(../img/header-slide-2.png);
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-color: #8996a6;
+}
+.index_bg-3 {
+  background-image: url(../img/header-slide-3.png);
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-color: #9d8b84;
+}
+
+.catalog__bg {
+   background-color: #849d8f;
 }
 /*header*/
 .page-header .container {
@@ -426,10 +442,9 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding: 0;
   list-style: none;
+   padding-top: 313px;
 }
-.slider__item_slide1 {
-  padding-top: 313px;
-}
+
 .slider__title {
   font-size: 60px;
   font-weight: 700;
@@ -1020,8 +1035,10 @@ input[type="radio"].visually-hidden {
   background-color: rgba(0, 0, 0, 0.07);
   box-shadow: inset 0 2px 2px 0 #942718;
 }
-.map__inner {
+.map {
   position: relative;
+}
+.map__inner {
   width: 1200px;
   height: 430px;
   margin: 0 auto;
@@ -1029,8 +1046,9 @@ input[type="radio"].visually-hidden {
 }
 .map__adress-inner {
   position: absolute;
+  z-index: 2;
   top: 62px;
-  left: 872px;
+  left: 904px;
   display: flex;
   box-sizing: border-box;
   width: 302px;
@@ -1121,6 +1139,9 @@ input[type="radio"].visually-hidden {
   border-radius: 30px;
   background-color: rgba(0, 0, 0, 0.07);
   box-shadow: inset 0 2px 2px 0 #942718;
+}
+.map__static_hide-map {
+  display: none;
 }
 /*main-index*/
 /*modal-catalog*/
@@ -1381,6 +1402,7 @@ input[type="radio"].visually-hidden {
 /*modal-callback*/
 .modal-callback {
   position: fixed;
+  z-index: 2;
   top: 50%;
   left: 50%;
   display: none;
@@ -1409,7 +1431,7 @@ input[type="radio"].visually-hidden {
 .modal-callback__close-btn {
   position: absolute;
   top: 20px;
-  right: 0;
+  right: 20px;
   display: block;
   width: 20px;
   height: 20px;
@@ -1545,6 +1567,9 @@ input[type="radio"].visually-hidden {
   width: 100%;
   height: 100%;
   background-color: rgba(0,0,0,0.3);
+}
+.modal-overlay-show {
+  display: block;
 }
 /*modal-callback*/
 /*header-catalog*/
