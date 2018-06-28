@@ -14,41 +14,6 @@ var slider1 = document.querySelector('.slider__item_slide2');
 var slider2 = document.querySelector('.slider__item_slide3');
 var index = document.querySelector('.index');
 
-// var modalSearch =  document.querySelector('.modal-search');
-// var modalUser =  document.querySelector('.modal-user');
-// //3 modalCallback
-
-// var serchFormInput = modalSearch.querySelector('.form-search__input');
-// if(modalSearch) {
-//   serchFormInput.focus();
-// }
-// var emailForm = document.querySelector('[name=email]');
-// var mailTextForm = document.querySelector('[name=mail-text]');
-// var form = modalWindow.querySelector('form');
-// var isStorageSupport = true;
-// var storageName = "";
-// var storageEmail = "";
-
-// try {
-//   storageName = localStorage.getItem('name');
-//   storageEmail = localStorage.getItem('email');
-
-// } catch(err) {
-//     isStorageSupport = false;
-// }
-
-// form.addEventListener('submit', function(evt) {
-//   if(!nameForm.value || !emailForm.value || !mailTextForm.value){
-//     evt.preventDefault();
-//     modalWindow.classList.add('modal-error');
-//   } else {
-//     if(isStorageSupport) {
-//       localStorage.setItem('name', nameForm.value);
-//       localStorage.setItem('email', emailForm.value);
-//     }
-//   }
-// });
-
 if (sliderControl0 && sliderControl1 && sliderControl2) {
   sliderControl0.addEventListener('click', function(evt) {
     evt.preventDefault();
