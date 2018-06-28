@@ -5,8 +5,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Каталог-Глейси</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic">
   </head>
   <body class="catalog__bg">
@@ -199,19 +199,19 @@
             <legend class="form-filter__title">Жирность:</legend>
             <ul class="percent-fatness__list">
               <li class="percent-fatness__item  percent-fatness__item_1">
-                <input class="visually-hidden  percent-fatness__input-radio" type="radio" name="fatness" value="percent0" id="percent0" aria-label="опция выбора мороженого с жирностью 0%">
+                <input class="visually-hidden  filter__input  percent-fatness__input-radio" type="radio" name="fatness" value="percent0" id="percent0" aria-label="опция выбора мороженого с жирностью 0%">
                 <label class="percent-fatness__option" for="percent0">0%</label>
               </li>
               <li class="percent-fatness__item  percent-fatness__item_2">
-                <input class="visually-hidden  percent-fatness__input-radio" type="radio" name="fatness" value="percent10" id="percent10" aria-label="опция выбора мороженого с жирностью до 10%" checked>
+                <input class="visually-hidden  filter__input  percent-fatness__input-radio" type="radio" name="fatness" value="percent10" id="percent10" aria-label="опция выбора мороженого с жирностью до 10%" checked>
                 <label class="percent-fatness__option" for="percent10">до 10%</label>
               </li>
               <li class="percent-fatness__item  percent-fatness__item_3">
-                <input class="visually-hidden  percent-fatness__input-radio" type="radio" name="fatness" value="percent30" id="percent30" aria-label="опция выбора мороженого с жирностью до 30%">
+                <input class="visually-hidden  filter__input  percent-fatness__input-radio" type="radio" name="fatness" value="percent30" id="percent30" aria-label="опция выбора мороженого с жирностью до 30%">
                 <label class="percent-fatness__option" for="percent30">до 30%</label>
               </li>
               <li class="percent-fatness__item  percent-fatness__item_4">
-                <input class="visually-hidden  percent-fatness__input-radio" type="radio" name="fatness" value="percent0" id="percent-over30" aria-label="опция выбора мороженого с жирностью более 30%">
+                <input class="visually-hidden  filter__input  percent-fatness__input-radio" type="radio" name="fatness" value="percent0" id="percent-over30" aria-label="опция выбора мороженого с жирностью более 30%">
                 <label class="percent-fatness__option" for="percent-over30">выше 30%</label>
               </li>
             </ul>
@@ -220,23 +220,23 @@
             <legend class="form-filter__title">Наполнители:</legend>
             <ul class="filler__list">
               <li class="filler__item  filler__item_1">
-                <input class="visually-hidden  filler__input-checkbox" type="checkbox" id="chocolate" aria-label="опция для выбора мороженого с шоколадными наполнителями" name="chocolate" checked>
+                <input class="visually-hidden  filter__input  filler__input-checkbox" type="checkbox" id="chocolate" aria-label="опция для выбора мороженого с шоколадными наполнителями" name="chocolate" checked>
                 <label class="filler__option" for="chocolate">шоколадные</label>
               </li>
               <li class="filler__item  filler__item_2">
-                <input class="visually-hidden  filler__input-checkbox" type="checkbox" id="sugar-powder" aria-label="опция для выбора мороженого с сахарными присыпками" name="sugar-powder" checked>
+                <input class="visually-hidden  filter__input  filler__input-checkbox" type="checkbox" id="sugar-powder" aria-label="опция для выбора мороженого с сахарными присыпками" name="sugar-powder" checked>
                 <label class="filler__option" for="sugar-powder">сахарные присыпки</label>
               </li>
               <li class="filler__item  filler__item_3">
-                <input class="visually-hidden  filler__input-checkbox" type="checkbox" id="fruits" aria-label="опция для выбора мороженого с фруктовыми наполнителями" name="fruits">
+                <input class="visually-hidden  filter__input  filler__input-checkbox" type="checkbox" id="fruits" aria-label="опция для выбора мороженого с фруктовыми наполнителями" name="fruits">
                 <label class="filler__option" for="fruits">фрукты</label>
               </li>
               <li class="filler__item  filler__item_4">
-                <input class="visually-hidden  filler__input-checkbox" type="checkbox" id="syrups" aria-label="опция для выбора мороженого с сиропами" name="syrups">
+                <input class="visually-hidden  filter__input  filler__input-checkbox" type="checkbox" id="syrups" aria-label="опция для выбора мороженого с сиропами" name="syrups">
                 <label class="filler__option" for="syrups">сиропы</label>
               </li>
               <li class="filler__item  filler__item_5">
-                <input class="visually-hidden  filler__input-checkbox" type="checkbox" id="jams" aria-label="опция для выбора мороженого с джемами" name="jams">
+                <input class="visually-hidden  filter__input  filler__input-checkbox" type="checkbox" id="jams" aria-label="опция для выбора мороженого с джемами" name="jams">
                 <label class="filler__option" for="jams">джемы</label>
               </li>
             </ul>
@@ -250,7 +250,10 @@
               <p class="card__inner">
                 <img class="card__img  card__img_1" width="267" height="267" src="img/gallery-1.jpg" alt="Фото мороженого: Сливочное с апельсиновым джемом и цитрусовой стружкой">
               </p>
-              <b class="card__price">310 &#8381;<span>/кг</span></b>
+              <div class="card__price">
+                <span class="card__price_sum">310</span>
+                <span class="card__price_weight">/кг</span>
+              </div>
               <p class="card__desc  card__desc_1">
                 Сливочное с апельсиновым джемом и цитрусовой стружкой
               </p>
@@ -262,7 +265,10 @@
               <p class="card__inner">
                 <img class="card__img  card__img_2" width="267" height="267" src="img/gallery-2.jpg" alt="Фото мороженого: Сливочно-кофейное с кусочками шоколада">
               </p>
-              <b class="card__price">380 &#8381;/кг</b>
+              <div class="card__price">
+                <span class="card__price_sum">380</span>
+                <span class="card__price_weight">/кг</span>
+              </div>
               <p class="card__desc  card__desc_2">
                 Сливочно-кофейное с кусочками шоколада
               </p>
@@ -274,7 +280,10 @@
               <p class="card__inner">
                 <img class="card__img  card__img_3" width="267" height="267" src="img/gallery-3.jpg" alt="Фото мороженого: Сливочно-клубничное с присыпкой из белого шоколада">
               </p>
-              <b class="card__price">355 &#8381;/кг</b>
+              <div class="card__price">
+                <span class="card__price_sum">355</span>
+                <span class="card__price_weight">/кг</span>
+              </div>
               <p class="card__desc  card__desc_3">
                 Сливочно-клубничное с присыпкой из белого шоколада
               </p>
@@ -286,7 +295,10 @@
               <p class="card__inner">
                 <img class="card__img  card__img_card4" width="267" height="267" src="img/gallery-4.jpg" alt="Фото мороженого: Сливочное крем-брюле с карамельной подливкой">
               </p>
-              <b class="card__price">415 &#8381;/кг</b>
+              <div class="card__price">
+                <span class="card__price_sum">415</span>
+                <span class="card__price_weight">/кг</span>
+              </div>
               <p class="card__desc  card__desc_4">
                 Сливочное крем-брюле с карамельной подливкой
               </p>
@@ -298,7 +310,10 @@
               <p class="card__inner">
                 <img class="card__img  card__img_5" width="267" height="267" src="img/gallery-5.jpg" alt="Фото мороженого: Сливочное с брусничным джемом">
               </p>
-              <b class="card__price">325 &#8381;/кг</b>
+              <div class="card__price">
+                <span class="card__price_sum">325</span>
+                <span class="card__price_weight">/кг</span>
+              </div>
               <p class="card__desc  card__desc_5">
                 Сливочное с брусничным<br>
                 джемом
@@ -311,7 +326,10 @@
               <p class="card__inner">
                 <img class="card__img  card__img_6" width="267" height="267" src="img/gallery-6.jpg" alt="Фото мороженого: Сливочное-черничное с цельными ягодами черники">
               </p>
-              <b class="card__price">410 &#8381;/кг</b>
+              <div class="card__price">
+                <span class="card__price_sum">410</span>
+                <span class="card__price_weight">/кг</span>
+              </div>
               <p class="card__desc  card__desc_6">
                 Сливочное-черничное с цельными ягодами черники
               </p>
@@ -323,7 +341,10 @@
               <p class="card__inner">
                 <img class="card__img  card__img_7" width="267" height="267" src="img/gallery-7.jpg" alt="Фото мороженого: Сливочно-лимонное с карамельной присыпкой">
               </p>
-              <b class="card__price">375 &#8381;/кг</b>
+              <div class="card__price">
+                <span class="card__price_sum">375</span>
+                <span class="card__price_weight">/кг</span>
+              </div>
               <p class="card__desc  card__desc_7">
                 Сливочно-лимонное с карамельной присыпкой
               </p>
@@ -335,7 +356,10 @@
               <p class="card__inner">
                 <img class="card__img  card__img_8" width="267" height="267" src="img/gallery-8.jpg" alt="Фото мороженого: Сливочное с шоколадной стружкой">
               </p>
-              <b class="card__price">320 &#8381;/кг</b>
+              <div class="card__price">
+                <span class="card__price_sum">320</span>
+                <span class="card__price_weight">/кг</span>
+              </div>
               <p class="card__desc  card__desc_8">
                 Сливочное с шоколадной стружкой
               </p>
@@ -347,7 +371,10 @@
               <p class="card__inner">
                 <img class="card__img  card__img_9" width="267" height="267" src="img/gallery-9.jpg" alt="Фото мороженого: Сливочно-ванильное с кусочками шоколада">
               </p>
-              <b class="card__price">440 &#8381;/кг</b>
+              <div class="card__price">
+                <span class="card__price_sum">440</span>
+                <span class="card__price_weight">/кг</span>
+              </div>
               <p class="card__desc  card__desc_9">
                 Сливочно-ванильное с<br>
                 кусочками шоколада
@@ -360,7 +387,10 @@
               <p class="card__inner">
                 <img class="card__img  card__img_10" width="267" height="267" src="img/gallery-10.jpg" alt="Фото мороженого: Сливочное с ментоловым сиропом">
               </p>
-              <b class="card__price">435 &#8381;/кг</b>
+              <div class="card__price">
+                <span class="card__price_sum">435</span>
+                <span class="card__price_weight">/кг</span>
+              </div>
               <p class="card__desc  card__desc_10">
                 Сливочное с ментоловым<br>
                 сиропом
@@ -373,7 +403,10 @@
               <p class="card__inner">
                 <img class="card__img  card__img_11" width="267" height="267" src="img/gallery-11.jpg" alt="Фото мороженого: Сливочное с кусочками черного шоколада">
               </p>
-              <b class="card__price">355 &#8381;/кг</b>
+              <div class="card__price">
+                <span class="card__price_sum">355</span>
+                <span class="card__price_weight">/кг</span>
+              </div>
               <p class="card__desc  card__desc_11">
                 Сливочное с кусочками черного шоколада
               </p>
@@ -385,7 +418,10 @@
               <p class="card__inner">
                 <img class="card__img  card__img_12" width="267" height="267" src="img/gallery-12.jpg" alt="Фото мороженого: Сливочное с мятным сиропом">
               </p>
-              <b class="card__price">420 &#8381;/кг</b>
+              <div class="card__price">
+                <span class="card__price_sum">420</span>
+                <span class="card__price_weight">/кг</span>
+              </div>
               <p class="card__desc  card__desc_12">
                 Сливочное с мятным сиропом
               </p>
