@@ -1084,9 +1084,6 @@ input[type="radio"].visually-hidden {
   margin-bottom: 35px;
   color: #5a5a5a;
 }
-.form-subscribe {
-  margin-bottom: 30px;
-}
 .form-subscribe__input {
   font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
@@ -1104,6 +1101,7 @@ input[type="radio"].visually-hidden {
   border-radius: 6px;
   outline: none;
   background-color: #ffffff;
+  margin-bottom: 30px;
 }
 .form-subscribe__input:hover {
   -webkit-box-sizing: border-box;
@@ -1111,11 +1109,15 @@ input[type="radio"].visually-hidden {
   padding-top: 9px;
   padding-bottom: 9px;
   border: 2px solid rgba(154, 154, 154, 0.52);
+  margin-bottom: 29px;
+  margin-top: -1px;
 }
 .form-subscribe__input:focus {
   padding-top: 9px;
   padding-bottom: 9px;
   border: 2px solid rgba(46, 136, 228, 0.52);
+  margin-bottom: 29px;
+  margin-top: -1px;
 }
 .form-subscribe__input::-webkit-input-placeholder {
   font-family: "Roboto", Arial, sans-serif;
@@ -1440,11 +1442,13 @@ input[type="radio"].visually-hidden {
   padding-top: 9px;
   padding-bottom: 9px;
   border: 2px solid rgba(154, 154, 154, 0.52);
+  margin-bottom: 18px;
 }
 .form-search__input:focus {
   padding-top: 9px;
   padding-bottom: 9px;
   border: 2px solid rgba(46, 136, 228, 0.52);
+  margin-bottom: 18px;
 }
 .form-search__input::-webkit-input-placeholder {
   font-family: "Roboto", Arial, sans-serif;
@@ -1522,11 +1526,13 @@ input[type="radio"].visually-hidden {
   padding-top: 9px;
   padding-bottom: 9px;
   border: 2px solid rgba(154, 154, 154, 0.52);
+  margin-bottom: 18px;
 }
 .form-user__input:focus {
   padding-top: 9px;
   padding-bottom: 9px;
   border: 2px solid rgba(46, 136, 228, 0.52);
+  margin-bottom: 18px;
 }
 .form-user__input::-webkit-input-placeholder {
   font-family: "Roboto", Arial, sans-serif;
@@ -1769,11 +1775,13 @@ input[type="radio"].visually-hidden {
   padding-top: 9px;
   padding-bottom: 9px;
   border: 2px solid rgba(154, 154, 154, 0.52);
+  margin-bottom: 18px;
 }
 .form-callback__input:focus {
   padding-top: 9px;
   padding-bottom: 9px;
   border: 2px solid rgba(46, 136, 228, 0.52);
+  margin-bottom: 18px;
 }
 .form-callback__input_area {
   min-height: 155px;
@@ -1783,11 +1791,13 @@ input[type="radio"].visually-hidden {
   padding-top: 9px;
   padding-bottom: 9px;
   border: 2px solid rgba(154, 154, 154, 0.52);
+  margin-bottom: 25px;
 }
 .form-callback__input_area:focus {
   padding-top: 9px;
   padding-bottom: 9px;
   border: 2px solid rgba(46, 136, 228, 0.52);
+  margin-bottom: 25px;
 }
 .btn__form-callback-submit {
   font-family: "Roboto", Arial, sans-serif;
